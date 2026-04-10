@@ -1,0 +1,259 @@
+{
+  "testName": "DISC Clásico - 28 Bloques",
+  "version": "1.0",
+  "description": "Banco de preguntas del Test DISC-R de 28 bloques extraído del archivo proporcionado. Cada bloque contiene 4 palabras con su letra asignada.",
+  "blocks": [
+    {
+      "blockNumber": 1,
+      "words": [
+        { "word": "Entusiasta", "letter": "I" },
+        { "word": "Rápido(a)", "letter": "D" },
+        { "word": "Lógico(a)", "letter": "C" },
+        { "word": "Apacible", "letter": "S" }
+      ]
+    },
+    {
+      "blockNumber": 2,
+      "words": [
+        { "word": "Cauteloso(a)", "letter": "C" },
+        { "word": "Decidido(a)", "letter": "D" },
+        { "word": "Receptivo(a)", "letter": "I" },
+        { "word": "Bondadoso(a)", "letter": "S" }
+      ]
+    },
+    {
+      "blockNumber": 3,
+      "words": [
+        { "word": "Amigable", "letter": "I" },
+        { "word": "Valeroso(a)", "letter": "D" },
+        { "word": "Paciente", "letter": "S" },
+        { "word": "Preciso(a)", "letter": "C" }
+      ]
+    },
+    {
+      "blockNumber": 4,
+      "words": [
+        { "word": "Elocuente", "letter": "I" },
+        { "word": "Controlado(a)", "letter": "C" },
+        { "word": "Tolerante", "letter": "S" },
+        { "word": "Decisivo(a)", "letter": "D" }
+      ]
+    },
+    {
+      "blockNumber": 5,
+      "words": [
+        { "word": "Atrevido(a)", "letter": "D" },
+        { "word": "Concienzudo(a)", "letter": "C" },
+        { "word": "Comunicativo(a)", "letter": "I" },
+        { "word": "Moderado(a)", "letter": "S" }
+      ]
+    },
+    {
+      "blockNumber": 6,
+      "words": [
+        { "word": "Ameno(a)", "letter": "I" },
+        { "word": "Ingenioso(a)", "letter": "I" },
+        { "word": "Investigador(a)", "letter": "C" },
+        { "word": "Acepta Riesgos", "letter": "D" }
+      ]
+    },
+    {
+      "blockNumber": 7,
+      "words": [
+        { "word": "Expresivo(a)", "letter": "I" },
+        { "word": "Cuidadoso(a)", "letter": "C" },
+        { "word": "Dominante", "letter": "D" },
+        { "word": "Sensible", "letter": "S" }
+      ]
+    },
+    {
+      "blockNumber": 8,
+      "words": [
+        { "word": "Extrovertido(a)", "letter": "I" },
+        { "word": "Precavido(a)", "letter": "C" },
+        { "word": "Impaciente", "letter": "D" },
+        { "word": "Calmado(a)", "letter": "S" }
+      ]
+    },
+    {
+      "blockNumber": 9,
+      "words": [
+        { "word": "Discreto(a)", "letter": "C" },
+        { "word": "Complaciente", "letter": "S" },
+        { "word": "Encantador(a)", "letter": "I" },
+        { "word": "Insistente", "letter": "D" }
+      ]
+    },
+    {
+      "blockNumber": 10,
+      "words": [
+        { "word": "Anima a los demás", "letter": "I" },
+        { "word": "Pacífico(a)", "letter": "S" },
+        { "word": "Perfeccionista", "letter": "C" },
+        { "word": "Valeroso(a)", "letter": "D" }
+      ]
+    },
+    {
+      "blockNumber": 11,
+      "words": [
+        { "word": "Reservado(a)", "letter": "C" },
+        { "word": "Atento(a)", "letter": "S" },
+        { "word": "Osado(a)", "letter": "D" },
+        { "word": "Alegre", "letter": "I" }
+      ]
+    },
+    {
+      "blockNumber": 12,
+      "words": [
+        { "word": "Estimulante", "letter": "I" },
+        { "word": "Gentil", "letter": "S" },
+        { "word": "Impetuoso(a)", "letter": "D" },
+        { "word": "Preciso(a)", "letter": "C" }
+      ]
+    },
+    {
+      "blockNumber": 13,
+      "words": [
+        { "word": "Competitivo(a)", "letter": "D" },
+        { "word": "Considerado(a)", "letter": "S" },
+        { "word": "Alegre", "letter": "I" },
+        { "word": "Cauto(a)", "letter": "C" }
+      ]
+    },
+    {
+      "blockNumber": 14,
+      "words": [
+        { "word": "Meticuloso(a)", "letter": "C" },
+        { "word": "Obediente", "letter": "S" },
+        { "word": "Ideas Firmes", "letter": "D" },
+        { "word": "Alentador(a)", "letter": "I" }
+      ]
+    },
+    {
+      "blockNumber": 15,
+      "words": [
+        { "word": "Popular", "letter": "I" },
+        { "word": "Reflexivo(a)", "letter": "C" },
+        { "word": "Tenaz", "letter": "D" },
+        { "word": "Tranquilo(a)", "letter": "S" }
+      ]
+    },
+    {
+      "blockNumber": 16,
+      "words": [
+        { "word": "Analítico(a)", "letter": "C" },
+        { "word": "Audaz", "letter": "D" },
+        { "word": "Leal", "letter": "S" },
+        { "word": "Sociable", "letter": "I" }
+      ]
+    },
+    {
+      "blockNumber": 17,
+      "words": [
+        { "word": "Sociable", "letter": "I" },
+        { "word": "Autosuficiente", "letter": "D" },
+        { "word": "Contento(a)", "letter": "S" },
+        { "word": "Certero(a)", "letter": "C" }
+      ]
+    },
+    {
+      "blockNumber": 18,
+      "words": [
+        { "word": "Adaptable", "letter": "S" },
+        { "word": "Resuelto(a)", "letter": "D" },
+        { "word": "Prevenido(a)", "letter": "C" },
+        { "word": "Vivaz", "letter": "I" }
+      ]
+    },
+    {
+      "blockNumber": 19,
+      "words": [
+        { "word": "Agresivo(a)", "letter": "D" },
+        { "word": "Amistoso(a)", "letter": "I" },
+        { "word": "Directo(a)", "letter": "D" },
+        { "word": "Ecuánime", "letter": "S" }
+      ]
+    },
+    {
+      "blockNumber": 20,
+      "words": [
+        { "word": "De trato Fácil", "letter": "S" },
+        { "word": "Compasivo(a)", "letter": "S" },
+        { "word": "Habla Directo", "letter": "D" },
+        { "word": "Elocuente", "letter": "I" }
+      ]
+    },
+    {
+      "blockNumber": 21,
+      "words": [
+        { "word": "Evaluador(a)", "letter": "C" },
+        { "word": "Generoso(a)", "letter": "I" },
+        { "word": "Animado(a)", "letter": "I" },
+        { "word": "Persistente", "letter": "D" }
+      ]
+    },
+    {
+      "blockNumber": 22,
+      "words": [
+        { "word": "Impulsivo(a)", "letter": "D" },
+        { "word": "Cuida los Detalles", "letter": "C" },
+        { "word": "Enérgico(a)", "letter": "D" },
+        { "word": "Tranquilo(a)", "letter": "S" }
+      ]
+    },
+    {
+      "blockNumber": 23,
+      "words": [
+        { "word": "Sociable", "letter": "I" },
+        { "word": "Sistemático(a)", "letter": "C" },
+        { "word": "Vigoroso(a)", "letter": "D" },
+        { "word": "Tolerante", "letter": "S" }
+      ]
+    },
+    {
+      "blockNumber": 24,
+      "words": [
+        { "word": "Cautivador(a)", "letter": "I" },
+        { "word": "Exigente", "letter": "D" },
+        { "word": "Apegado(a) a las normas", "letter": "C" },
+        { "word": "Tranquilo(a)", "letter": "S" }
+      ]
+    },
+    {
+      "blockNumber": 25,
+      "words": [
+        { "word": "Le agrada discutir", "letter": "D" },
+        { "word": "Metódico(a)", "letter": "C" },
+        { "word": "Comedido(a)", "letter": "S" },
+        { "word": "Desenvuelto(a)", "letter": "I" }
+      ]
+    },
+    {
+      "blockNumber": 26,
+      "words": [
+        { "word": "Jovial", "letter": "I" },
+        { "word": "Preciso(a)", "letter": "C" },
+        { "word": "Directo(a)", "letter": "D" },
+        { "word": "Discerniente", "letter": "C" }
+      ]
+    },
+    {
+      "blockNumber": 27,
+      "words": [
+        { "word": "Inquieto(a)", "letter": "D" },
+        { "word": "Amable", "letter": "S" },
+        { "word": "Cuidadoso(a)", "letter": "C" },
+        { "word": "Elocuente", "letter": "I" }
+      ]
+    },
+    {
+      "blockNumber": 28,
+      "words": [
+        { "word": "Prudente", "letter": "C" },
+        { "word": "Pionero(a)", "letter": "D" },
+        { "word": "Espontáneo(a)", "letter": "I" },
+        { "word": "Colaborador", "letter": "S" }
+      ]
+    }
+  ]
+}
