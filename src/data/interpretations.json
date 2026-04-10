@@ -1,0 +1,670 @@
+{
+  "profiles": {
+    "Alto C": {
+      "nombre": "El Analista - Perfil alto en Cumplimiento",
+      "alias": "Objetivo - El Pensador Analítico",
+      "emociones": "Puede rechazar la agresión interpersonal.",
+      "meta": "La exactitud.",
+      "juzgaALosDemasPor": "Su capacidad de pensamiento analítico.",
+      "influyeEnLosDemasMediante": "La información objetiva, los argumentos lógicos.",
+      "suValorParaLaOrganizacion": "Define, esclarece, obtiene información, evalúa, comprueba.",
+      "abusaDe": "El análisis.",
+      "bajoPresion": "Se vuelve aprensivo.",
+      "teme": "Actos irracionales, el ridículo.",
+      "seriaEficazSi": "Fuera más abierto, compartiera en público su perspicacia y opiniones.",
+      "descripcionNarrativa": "La capacidad de pensamiento crítico suele estar muy desarrollada en el Analista. Recalca la importancia de sacar conclusiones y basar las acciones en hechos. Busca la precisión y exactitud en todo lo que hace. Sin embargo, para llevar a cabo con eficiencia su trabajo, el Analista suele combinar la información intuitiva con los datos que posee. Cuando duda sobre el curso a tomar, evita hacer el ridículo preparándose meticulosamente. Por ejemplo, el Analista perfeccionará una nueva habilidad en privado antes de usarla en alguna actividad de grupo.\n\nEl Analista prefiere trabajar con personas que, como él, prefieren mantener un ambiente laboral tranquilo. Como puede mostrarse reticente en expresar sus sentimientos, hay quienes lo consideran tímido. Se siente particularmente incómodo ante personas agresivas. A pesar de esta apariencia templada, el Analista tiene una fuerte necesidad de controlar el ambiente. Suele ejercer este control en forma indirecta solicitando el apego a reglas y normas.\n\nEl Analista se preocupa por llegar a respuestas \"correctas\" y le puede resultar difícil tomar decisiones en situaciones ambiguas. Su tendencia a preocuparse le puede llevar a una \"parálisis por análisis\". Con demasiada frecuencia, cuando comete un error, titubea en reconocerlo y se empeña en buscar información que le permita apoyar su postura.",
+      "fortalezas": [
+        "Pensamiento crítico y analítico desarrollado",
+        "Precisión y exactitud excepcionales",
+        "Capacidad de evaluar y comprender datos complejos",
+        "Meticulosidad en la preparación",
+        "Preferencia por ambientes ordenados y claros",
+        "Fidelidad a las normas y estándares establecidos"
+      ],
+      "areasMejora": [
+        "Tomar decisiones en situaciones ambiguas",
+        "Ser más abierto con sus opiniones",
+        "Compartir perspicacias de forma pública",
+        "Ser más flexible ante cambios inesperados",
+        "Expresar datos de forma más persuasiva y menos técnica",
+        "Aceptar que no siempre hay respuesta \"correcta\""
+      ],
+      "motivadores": [
+        "Trabajo que requiera precisión y análisis",
+        "Datos claros y bien estructurados",
+        "Reconocimiento de sus hallazgos e investigaciones",
+        "Tiempo para preparación meticulosa",
+        "Ambiente de trabajo estable y predecible",
+        "Oportunidades de profundizar conocimiento"
+      ],
+      "estilo": "C"
+    },
+    "Alto D": {
+      "nombre": "El Impulsor - Perfil alto en Dominancia",
+      "alias": "Dominador - El Ejecutor de Resultados",
+      "emociones": "Busca controlar situaciones y puede ser impaciente con la ineficiencia.",
+      "meta": "Logros y resultados visibles.",
+      "juzgaALosDemasPor": "Su capacidad para producir resultados.",
+      "influyeEnLosDemasMediante": "Demostración directa de autoridad y competencia.",
+      "suValorParaLaOrganizacion": "Impulsa el trabajo, produce resultados, resuelve problemas, toma control.",
+      "abusaDe": "La velocidad sin consideración.",
+      "bajoPresion": "Se vuelve dominante y controlador.",
+      "teme": "La pérdida de control, la ineficiencia.",
+      "seriaEficazSi": "Fuera más considerado con los sentimientos de otros, delegara más.",
+      "descripcionNarrativa": "El Impulsor es una fuerza motriz en cualquier organización. Está orientado hacia resultados visibles y medibles. Prefiere actuar rápidamente, incluso si esto significa correr algunos riesgos. Es competitivo por naturaleza y busca constantemente maneras de mejorar su posición o la de su equipo.\n\nEl Impulsor puede parecer insensible a los sentimientos de otros, pero esto no es intencional; simplemente tiene una visión del objetivo final que puede eclipsar consideraciones emocionales. Generalmente es directo en su comunicación, prefiriendo lo claro y conciso sobre lo ambiguo. Bajo presión, tiende a tomar aún más control de las situaciones.\n\nEstá motivado por el desafío y las oportunidades de demostrar su capacidad. El Impulsor asume responsabilidades voluntariamente y espera que otros hagan lo mismo. Para el Impulsor, el reconocimiento es importante pero se valida principalmente a través del logro concreto más que por el elogio.",
+      "fortalezas": [
+        "Orientación clara hacia resultados",
+        "Toma de decisiones rápida y decidida",
+        "Competencia y excelencia en la ejecución",
+        "Liderazgo natural y autoridad",
+        "Capacidad para asumir riesgos calculados",
+        "Resolución eficiente de problemas"
+      ],
+      "areasMejora": [
+        "Desarrollar empatía con otros",
+        "Escuchar activamente antes de decidir",
+        "Delegación genuina en lugar de solo asignación",
+        "Reconocer contribuciones de otros",
+        "Considerar el bienestar del equipo",
+        "Desarrollar paciencia con procesos"
+      ],
+      "motivadores": [
+        "Desafíos competitivos",
+        "Responsabilidad y autoridad",
+        "Resultados medibles y visibles",
+        "Autonomía para actuar",
+        "Reconocimiento del logro",
+        "Oportunidades de avance"
+      ],
+      "estilo": "D"
+    },
+    "Alto I": {
+      "nombre": "El Influyente - Perfil alto en Influencia",
+      "alias": "Promotor - El Comunicador Optimista",
+      "emociones": "Busca reconocimiento social y puede ser impulsivo emocionalmente.",
+      "meta": "Entusiasmo y aceptación social.",
+      "juzgaALosDemasPor": "Su capacidad para comunicar y motivar.",
+      "influyeEnLosDemasMediante": "Carisma, optimismo y energía contagiosa.",
+      "suValorParaLaOrganizacion": "Motiva, persuade, genera entusiasmo, construye relaciones.",
+      "abusaDe": "Las palabras y promesas sin seguimiento.",
+      "bajoPresion": "Se vuelve hablador excesivamente o evita confrontación.",
+      "teme": "El rechazo social, no ser escuchado.",
+      "seriaEficazSi": "Fuera más consistente, completara proyectos, siguiera procesos establecidos.",
+      "descripcionNarrativa": "El Influyente es el \"alma de la fiesta\" en cualquier organización. Es naturalmente optimista y ve el lado positivo de las situaciones. Su energía y entusiasmo son contagiosos y pueden motivar a otros a lograr más. Es excelente en situaciones que requieren comunicación y construcción de relaciones.\n\nSin embargo, el Influyente puede ser visto como superficial en su análisis y puede hacer promesas sin siempre cumplirlas. Su tendencia a buscar aceptación social puede llevarlo a decir lo que otros quieren escuchar más que decir la verdad difícil. Cuando se enfrenta a conflicto, puede preferir evitarlo en lugar de enfrentarlo directamente.\n\nEl Influyente prospera en ambientes dinámicos y sociales. Está motivado por el reconocimiento y la aceptación. Para el Influyente, el proceso es menos importante que la experiencia general vivida durante el viaje hacia el objetivo.",
+      "fortalezas": [
+        "Comunicación excepcional y persuasión",
+        "Construcción de relaciones y redes",
+        "Optimismo y energía contagiosa",
+        "Capacidad para motivar a otros",
+        "Flexibilidad y adaptabilidad",
+        "Pensamiento creativo y generación de ideas"
+      ],
+      "areasMejora": [
+        "Seguimiento y cumplimiento de detalles",
+        "Desarrollo de consistencia en ejecución",
+        "Análisis profundo antes de decidir",
+        "Enfrentar conflictos directamente",
+        "Desarrollar profundidad técnica",
+        "Manejo del compromiso y sostenibilidad"
+      ],
+      "motivadores": [
+        "Interacción social y trabajo en equipo",
+        "Reconocimiento y aceptación",
+        "Variedad y novedad de tareas",
+        "Oportunidades para presentar/comunicar",
+        "Libertad para innovar",
+        "Ambiente dinámico y colaborativo"
+      ],
+      "estilo": "I"
+    },
+    "Alto S": {
+      "nombre": "El Apoyo - Perfil alto en Estabilidad",
+      "alias": "Cooperador - El Servidor Leal",
+      "emociones": "Busca apoyo y estabilidad, puede temer el cambio.",
+      "meta": "Armonía y estabilidad en las relaciones.",
+      "juzgaALosDemasPor": "Su lealtad y disposición para ayudar.",
+      "influyeEnLosDemasMediante": "La paciencia, la comprensión y el apoyo genuino.",
+      "suValorParaLaOrganizacion": "Apoya a otros, mantiene equipo unido, es consistente y leal.",
+      "abusaDe": "La paciencia y el sacrificio personal.",
+      "bajoPresion": "Se vuelve pasivo o acepta culpa que no le corresponde.",
+      "teme": "El cambio repentino, la confrontación, el rechazo del grupo.",
+      "seriaEficazSi": "Fuera más decisivo, expresara sus opiniones, iniciara acción.",
+      "descripcionNarrativa": "El Apoyo es el corazón humano de cualquier equipo. Es naturalmente empático y comprende el impacto emocional de las situaciones en las personas. Valora la estabilidad y la consistencia, y trabaja duro para mantener la armonía en su ambiente.\n\nEl Apoyo es leal hasta el extremo y puede sacrificar sus propias necesidades por el bien del grupo. Sin embargo, esto puede llevar a que su propia voz sea sofocada o ignorada. Puede ser muy resistente al cambio, especialmente si siente que podría disrumpir la cohesión del grupo.\n\nBajo presión, el Apoyo tiende a volverse pasivo o puede asumir la culpa de situaciones para evitar confrontación. Es importante que el Apoyo aprenda a establecer límites y a expresar sus propias necesidades. Su lealtad y consistencia son invaluables, pero su falta de iniciativa puede limitar su crecimiento profesional.",
+      "fortalezas": [
+        "Lealtad y confiabilidad excepcionales",
+        "Empatía profunda y comprensión",
+        "Paciencia y compostura bajo presión",
+        "Capacidad para mantener armonía en grupos",
+        "Consistencia y estabilidad en desempeño",
+        "Excelente apoyo y mentoría para otros"
+      ],
+      "areasMejora": [
+        "Ser más decisivo tomando iniciativa",
+        "Expresar opiniones propias con confianza",
+        "Aceptar el cambio como oportunidad",
+        "Establecer límites saludables",
+        "Desarrollar mayor autocrítica profesional",
+        "Tomar riesgos calculados"
+      ],
+      "motivadores": [
+        "Trabajo en equipo colaborativo",
+        "Relaciones significativas y duraderas",
+        "Estabilidad y previsibilidad",
+        "Oportunidades para apoyar a otros",
+        "Reconocimiento de contribución leal",
+        "Ambiente seguro y de confianza"
+      ],
+      "estilo": "S"
+    },
+    "Alto DI": {
+      "nombre": "El Ejecutivo - Dominancia + Influencia",
+      "alias": "Vendedor Dinámico",
+      "emociones": "Energético y competitivo, busca influencia y reconocimiento.",
+      "meta": "Resultados con impacto visible.",
+      "juzgaALosDemasPor": "Capacidad para producir y comunicar resultados.",
+      "influyeEnLosDemasMediante": "Demostración de competencia combinada con persuasión.",
+      "suValorParaLaOrganizacion": "Impulsa crecimiento, vende visión, lidera con carisma, logra objetivos.",
+      "abusaDe": "La urgencia y la promesa sin sustancia.",
+      "bajoPresion": "Se vuelve agresivo o manipulador para lograr objetivos.",
+      "teme": "La pérdida de estatus o influencia.",
+      "seriaEficazSi": "Desarrollara mayor profundidad en sustancia de sus propuestas.",
+      "descripcionNarrativa": "El Ejecutivo combina la orientación hacia resultados del Dominante con el carisma del Influyente. Es un líder natural que puede impulsar una visión mientras inspira a otros a seguirlo. Es excelente en ventas, negociaciones y presentaciones de alto impacto.\n\nCombina la decisión rápida del D con la habilidad comunicativa del I. Suele ser carismático y puede convencer a otros de su visión. Sin embargo, puede a veces favorecer lo espectacular sobre lo sustancial, y sus promesas no siempre se cumplen si prioriza nuevas oportunidades.",
+      "fortalezas": [
+        "Liderazgo carismático e inspirador",
+        "Combinación de acción rápida y persuasión",
+        "Visión clara comunicada con energía",
+        "Capacidad negociadora excepcional",
+        "Motivación y movilización de equipos",
+        "Adaptabilidad rápida a cambios"
+      ],
+      "areasMejora": [
+        "Profundidad técnica en detalles",
+        "Seguimiento consistente de compromisos",
+        "Escucha activa vs. dominar conversación",
+        "Autenticidad vs. manipulación",
+        "Gestión realista de expectativas"
+      ],
+      "motivadores": [
+        "Liderazgo visible y reconocido",
+        "Reconocimiento público y estatus",
+        "Ventas y crecimiento medible",
+        "Influencia y poder de decisión",
+        "Autonomía y libertad de acción"
+      ],
+      "estilo": "DI"
+    },
+    "Alto DC": {
+      "nombre": "El Perfeccionista - Dominancia + Cumplimiento",
+      "alias": "Ingeniero de Control",
+      "emociones": "Exigencia interna extrema, baja tolerancia a errores.",
+      "meta": "Excelencia en resultados con estándares altos.",
+      "juzgaALosDemasPor": "Competencia y apego a estándares.",
+      "influyeEnLosDemasMediante": "Demostración de dominio técnico y exigencia de excelencia.",
+      "suValorParaLaOrganizacion": "Asegura calidad, impulsa mejora continua, establece estándares altos.",
+      "abusaDe": "La crítica y la demanda de perfección.",
+      "bajoPresion": "Se vuelve crítico y demandante con exceso.",
+      "teme": "El fracaso, la incompetencia, la desorganización.",
+      "seriaEficazSi": "Fuera más flexible con imperfección humana.",
+      "descripcionNarrativa": "El Perfeccionista busca tanto resultados como calidad en los procesos. Es un líder técnico que entiende que la excelencia requiere atención al detalle. Sin embargo, puede ser tan exigente consigo mismo y con otros que crea un ambiente estresante.\n\nCombina el impulso del D con los estándares rigurosos del C. Esto lo convierte en alguien que no solo busca ganar, sino ganar de la forma \"correcta\". Puede ser visto como controlador debido a su deseo de asegurar la calidad en cada paso.",
+      "fortalezas": [
+        "Orientación implacable a excelencia",
+        "Conocimiento técnico profundo",
+        "Control de calidad excepcional",
+        "Liderazgo basado en competencia demostrada",
+        "Establecimiento de altos estándares",
+        "Resolución sistemática de problemas complejos"
+      ],
+      "areasMejora": [
+        "Flexibilidad con imperfección humana",
+        "Desarrollo de empatía y comprensión",
+        "Delegación confiada de responsabilidades",
+        "Aceptación de buenos resultados",
+        "Manejo del estrés personal",
+        "Comunicación sin criticar"
+      ],
+      "motivadores": [
+        "Proyectos complejos que requieren expertise",
+        "Oportunidades para mejorar procesos",
+        "Reconocimiento técnico y profesional",
+        "Control sobre resultados finales",
+        "Estándares claros y medibles",
+        "Autonomía profesional total"
+      ],
+      "estilo": "DC"
+    },
+    "Alto DS": {
+      "nombre": "El Estabilizador - Dominancia + Estabilidad",
+      "alias": "Guardián Firme",
+      "emociones": "Decidido pero confiable, baja variabilidad emocional.",
+      "meta": "Resultados sostenibles con estabilidad.",
+      "juzgaALosDemasPor": "Consistencia y confiabilidad en desempeño.",
+      "influyeEnLosDemasMediante": "Ejemplo personal consistente y expectativas claras.",
+      "suValorParaLaOrganizacion": "Lidera consistentemente, construye sistemas estables, es confiable.",
+      "abusaDe": "La rigidez de control.",
+      "bajoPresion": "Se vuelve obstinado pero no abandona.",
+      "teme": "El cambio que disrumpe estabilidad.",
+      "seriaEficazSi": "Fuera más adaptable a cambio necesario.",
+      "descripcionNarrativa": "El Estabilizador es un líder confiable que busca crear sistemas sostenibles. Combina la orientación a resultados del Dominante con la confiabilidad del Apoyo. Es excelente en roles administrativos y de gestión de operaciones.\n\nPuede mantener el rumbo incluso en tiempos difíciles, lo que lo hace más resistente que el D puro. Sin embargo, puede ser resistente a cambios transformacionales cuando siente que amenazan la estabilidad establecida.",
+      "fortalezas": [
+        "Liderazgo consistente y predecible",
+        "Construcción de sistemas sostenibles",
+        "Confiabilidad y estabilidad inquebrantable",
+        "Gestión experta de operaciones",
+        "Visión a largo plazo estratégica",
+        "Ejemplo personal fuerte y confiable"
+      ],
+      "areasMejora": [
+        "Adaptación a cambio rápido necesario",
+        "Mayor flexibilidad estratégica",
+        "Expresión de visión inspiradora",
+        "Delegación y empoderamiento de otros",
+        "Innovación vs. mantener status quo"
+      ],
+      "motivadores": [
+        "Construcción de sistemas y procesos",
+        "Responsabilidad clara y definida",
+        "Estabilidad laboral de largo plazo",
+        "Reconocimiento de confiabilidad",
+        "Oportunidades de mejora sostenible",
+        "Liderazgo estructurado y ordenado"
+      ],
+      "estilo": "DS"
+    },
+    "Alto IC": {
+      "nombre": "El Evaluador - Combinación Influencia/Cumplimiento",
+      "alias": "Persuador Analítico - El Estratega de Comunicación",
+      "emociones": "Entusiasmo controlado; prefiere la lógica pero sabe ser encantador.",
+      "meta": "Convencer a otros mediante hechos y una presentación impecable.",
+      "juzgaALosDemasPor": "Su capacidad para sustentar ideas con argumentos sólidos.",
+      "influyeEnLosDemasMediante": "Una mezcla de carisma personal y datos verificables.",
+      "suValorParaLaOrganizacion": "Comunica conceptos complejos de forma sencilla, vende ideas con base técnica.",
+      "abusaDe": "La persuasión excesiva o el perfeccionismo en la comunicación.",
+      "bajoPresion": "Se vuelve demasiado crítico con los argumentos de los demás.",
+      "teme": "Parecer poco profesional o estar equivocado en público.",
+      "seriaEficazSi": "Fuera más directo al grano y menos preocupado por la imagen perfecta.",
+      "descripcionNarrativa": "El Evaluador es un perfil híbrido muy valioso. Posee la calidez necesaria para conectar con la gente (I), pero no se queda en la superficie; necesita que todo tenga un sustento lógico (C). Es excelente para presentaciones públicas, ya que su entusiasmo está respaldado por una preparación minuciosa. A diferencia del I puro, el IC no improvisa; prefiere tener todos los datos antes de intentar convencer a alguien.",
+      "fortalezas": [
+        "Comunicación persuasiva pero estructurada",
+        "Habilidad para explicar datos técnicos a audiencias no técnicas",
+        "Atención al detalle en la presentación de proyectos",
+        "Equilibrio entre sociabilidad y objetividad"
+      ],
+      "areasMejora": [
+        "Aceptar la crítica a sus ideas sin tomarlo personal",
+        "Reducir el tiempo de preparación para ganar agilidad",
+        "Evitar el exceso de palabras cuando un \"sí\" o \"no\" basta",
+        "Delegar la revisión final de los detalles"
+      ],
+      "motivadores": [
+        "Reconocimiento por su profesionalismo y conocimiento",
+        "Oportunidades para influir en decisiones estratégicas",
+        "Ambientes donde la calidad y la imagen importan",
+        "Acceso a información detallada antes de actuar"
+      ],
+      "estilo": "IC"
+    },
+    "Alto ID": {
+      "nombre": "El Persuador - Combinación Influencia/Dominancia",
+      "alias": "El Convincente - El Motivador de Resultados",
+      "emociones": "Gran entusiasmo y confianza en sí mismo; proyecta éxito.",
+      "meta": "Lograr resultados a través de la persuasión y las personas.",
+      "juzgaALosDemasPor": "Su capacidad para entusiasmarse y actuar rápido.",
+      "influyeEnLosDemasMediante": "El encanto personal, el optimismo y la confianza.",
+      "suValorParaLaOrganizacion": "Excelente para abrir nuevos mercados, reclutar talento y movilizar equipos.",
+      "abusaDe": "La gesticulación, el optimismo excesivo y la falta de detalle.",
+      "bajoPresion": "Se vuelve impaciente y puede ser verbalmente agresivo si se le ignora.",
+      "teme": "El fracaso público y perder su estatus o influencia social.",
+      "seriaEficazSi": "Fuera más realista con los plazos y pusiera más atención a los datos.",
+      "descripcionNarrativa": "El Persuador es una fuerza de la naturaleza en términos de comunicación. Combina la calidez de la Influencia con la orientación a metas de la Dominancia. No solo quiere ganar, quiere que todos estén emocionados de ganar con él. Es muy bueno iniciando proyectos y convenciendo a escépticos, aunque su punto débil suele ser el seguimiento minucioso y la finalización de tareas administrativas.",
+      "fortalezas": [
+        "Increíble capacidad de persuasión y ventas",
+        "Energía alta y contagiosa para el equipo",
+        "Habilidad para manejar el rechazo y seguir adelante",
+        "Visión amplia y capacidad de delegar lo operativo"
+      ],
+      "areasMejora": [
+        "Escuchar más y hablar menos",
+        "Prestar atención a los detalles técnicos y procesos",
+        "Cumplir con compromisos de tiempo y fechas límite",
+        "Controlar la tendencia a exagerar resultados"
+      ],
+      "motivadores": [
+        "Prestigio, estatus y reconocimiento público",
+        "Libertad para actuar y tomar decisiones rápidas",
+        "Ambientes competitivos pero sociables",
+        "Nuevos retos que requieran habilidades interpersonales"
+      ],
+      "estilo": "ID"
+    },
+    "Alto IS": {
+      "nombre": "El Amigable - Combinación Influencia/Estabilidad",
+      "alias": "El Conciliador - El Motivador Empático",
+      "emociones": "Calidez, optimismo y serenidad; proyecta una imagen muy accesible.",
+      "meta": "Lograr la aceptación social y mantener un entorno pacífico.",
+      "juzgaALosDemasPor": "Su calidez humana y su disposición a colaborar.",
+      "influyeEnLosDemasMediante": "El encanto personal, la empatía y el apoyo constante.",
+      "suValorParaLaOrganizacion": "Fomenta la lealtad en el equipo, escucha a los demás y reduce la rotación de personal.",
+      "abusaDe": "La confianza en los demás (puede ser ingenuo) y la evitación de decisiones duras.",
+      "bajoPresion": "Se vuelve indeciso o excesivamente preocupado por el bienestar ajeno antes que por la tarea.",
+      "teme": "El rechazo social y los entornos de trabajo agresivos o fríos.",
+      "seriaEficazSi": "Fuera más directo al enfrentar problemas de rendimiento y más orientado a resultados técnicos.",
+      "descripcionNarrativa": "El Amigable es quizás el perfil más agradable del espectro DISC. Combina la energía social de la Influencia con la paciencia de la Estabilidad. Su enfoque principal son las relaciones humanas; es ese miembro del equipo que siempre sabe cómo están los demás y se preocupa por el clima laboral. Es un excelente facilitador, aunque a veces su necesidad de que todos estén felices puede retrasar la ejecución de tareas críticas.",
+      "fortalezas": [
+        "Habilidad excepcional para construir relaciones de confianza",
+        "Gran capacidad de mediación en conflictos internos",
+        "Comunicación cálida y alentadora",
+        "Paciencia para enseñar y guiar a otros"
+      ],
+      "areasMejora": [
+        "Establecer límites claros y decir \"no\" cuando es necesario",
+        "Tomar decisiones basadas en hechos objetivos, no solo en sentimientos",
+        "Aumentar el sentido de urgencia en proyectos críticos",
+        "Enfrentar el conflicto de manera directa"
+      ],
+      "motivadores": [
+        "Aprobación social y palmadas en la espalda",
+        "Trabajo en equipo y colaboración estrecha",
+        "Un entorno libre de presiones políticas o agresividad",
+        "Oportunidades para desarrollar a otras personas"
+      ],
+      "estilo": "IS"
+    },
+    "Alto SI": {
+      "nombre": "El Colaborador - Combinación Estabilidad/Influencia",
+      "alias": "El Facilitador - El Pacificador de Equipos",
+      "emociones": "Cercanía y calidez; proyecta una imagen de aceptación y calma.",
+      "meta": "Crear un ambiente de trabajo armonioso y relaciones duraderas.",
+      "juzgaALosDemasPor": "Su amabilidad y disposición para ayudar a otros.",
+      "influyeEnLosDemasMediante": "La empatía, el servicio y la escucha activa.",
+      "suValorParaLaOrganizacion": "Suaviza los conflictos, fomenta la cooperación, es excelente mentor.",
+      "abusaDe": "La tolerancia (le cuesta poner límites o dar feedback negativo).",
+      "bajoPresion": "Se vuelve indeciso por miedo a herir sentimientos.",
+      "teme": "El conflicto abierto, la hostilidad y los cambios repentinos.",
+      "seriaEficazSi": "Fuera más asertivo al expresar sus propias necesidades.",
+      "descripcionNarrativa": "El Colaborador es el perfil más orientado al servicio dentro del modelo DISC. Combina la naturaleza paciente de la Estabilidad con el enfoque en las personas de la Influencia. Es alguien que prefiere trabajar en equipo antes que solo, y siempre está dispuesto a escuchar. Su mayor talento es detectar el estado emocional de los demás y actuar como puente para resolver tensiones de forma diplomática.",
+      "fortalezas": [
+        "Empatía excepcional y gran capacidad de escucha",
+        "Lealtad profunda a las personas y a la organización",
+        "Habilidad para calmar personas enojadas o frustradas",
+        "Promueve un clima laboral positivo y seguro"
+      ],
+      "areasMejora": [
+        "Tomar decisiones difíciles que no gusten a todos",
+        "Ser directo cuando se requiere corrección inmediata",
+        "Priorizar sus tareas sobre los favores que le piden",
+        "Aumentar la velocidad en entornos de alta urgencia"
+      ],
+      "motivadores": [
+        "Sentirse parte de un equipo unido",
+        "Ayudar a los demás a alcanzar sus metas",
+        "Un entorno de trabajo sin confrontaciones",
+        "Reconocimiento sincero por sus esfuerzos personales"
+      ],
+      "estilo": "SI"
+    },
+    "Alto SC": {
+      "nombre": "El Planificador - Combinación Estabilidad/Cumplimiento",
+      "alias": "El Técnico Metódico - El Guardián de la Consistencia",
+      "emociones": "Controlado y reservado; rara vez muestra frustración en público.",
+      "meta": "Lograr resultados predecibles a través de procesos establecidos.",
+      "juzgaALosDemasPor": "Su confiabilidad y el respeto por los procedimientos.",
+      "influyeEnLosDemasMediante": "El desempeño constante y el conocimiento detallado del proceso.",
+      "suValorParaLaOrganizacion": "Crea estructura, mantiene la calma en el caos y asegura que el trabajo se termine correctamente.",
+      "abusaDe": "La dependencia de los manuales y la resistencia a improvisar.",
+      "bajoPresion": "Se vuelve excesivamente cauteloso y puede \"bloquearse\" ante cambios drásticos.",
+      "teme": "El desorden, la ambigüedad y cometer errores por falta de preparación.",
+      "seriaEficazSi": "Fuera más flexible ante los cambios y menos dependiente de la rutina.",
+      "descripcionNarrativa": "El Planificador es una persona reflexiva y concienzuda. Combina la naturaleza paciente de la Estabilidad con el enfoque en el detalle del Cumplimiento. No busca el protagonismo; prefiere trabajar en segundo plano asegurándose de que todos los engranajes funcionen. Es extremadamente confiable en tareas que requieren un seguimiento minucioso a largo plazo. Su comunicación es funcional y basada en hechos, evitando las exageraciones.",
+      "fortalezas": [
+        "Extrema confiabilidad y puntualidad en las entregas",
+        "Pensamiento lógico aplicado a la mejora de procesos",
+        "Gran capacidad para trabajar de forma autónoma y concentrada",
+        "Mantiene la calidad bajo condiciones de trabajo constantes"
+      ],
+      "areasMejora": [
+        "Comunicar sus preocupaciones antes de que se conviertan en problemas",
+        "Actuar con rapidez cuando no hay un manual de instrucciones",
+        "Delegar tareas de control a otros",
+        "Aceptar que el cambio es parte del crecimiento"
+      ],
+      "motivadores": [
+        "Ambientes de trabajo estables y organizados",
+        "Instrucciones claras y expectativas bien definidas",
+        "Tiempo suficiente para realizar un trabajo de calidad",
+        "Reconocimiento por su lealtad y precisión"
+      ],
+      "estilo": "SC"
+    },
+    "Alto SD": {
+      "nombre": "El Realizador Constante - Combinación Estabilidad/Dominancia",
+      "alias": "El Ejecutor Silencioso - El Persistente Pragmático",
+      "emociones": "Calma bajo presión; posee una fuerza de voluntad interna muy alta.",
+      "meta": "Lograr resultados concretos a través de un esfuerzo sostenido y metódico.",
+      "juzgaALosDemasPor": "Su capacidad para cumplir compromisos y su ética de trabajo.",
+      "influyeEnLosDemasMediante": "La persistencia, el ejemplo de trabajo duro y la confiabilidad.",
+      "suValorParaLaOrganizacion": "Lleva los proyectos hasta el final, es extremadamente resiliente y mantiene la dirección.",
+      "abusaDe": "La reserva (puede guardarse los problemas hasta que estallan) y la terquedad.",
+      "bajoPresion": "Se vuelve rígido y puede actuar de forma unilateral para terminar la tarea.",
+      "teme": "La inestabilidad operativa y perder el tiempo en discusiones improductivas.",
+      "seriaEficazSi": "Fuera más comunicativo sobre sus procesos y delegara la carga física de trabajo.",
+      "descripcionNarrativa": "El Realizador Constante es un perfil de \"empuje silencioso\". Combina la paciencia y el ritmo de la Estabilidad con la orientación a metas de la Dominancia. Es una persona que prefiere que su trabajo hable por él. No necesita grandes aspavientos ni reconocimientos públicos, solo necesita que le dejen avanzar hacia su objetivo. Es el perfil ideal para liderar implementaciones de largo plazo donde otros pierden el interés.",
+      "fortalezas": [
+        "Resiliencia y persistencia ante la adversidad",
+        "Enfoque práctico y pragmático de los problemas",
+        "Gran capacidad para trabajar bajo presión de tiempo prolongada",
+        "Lealtad combinada con un fuerte sentido del deber"
+      ],
+      "areasMejora": [
+        "Comunicar sus planes a los demás para que puedan ayudarle",
+        "Ser más flexible ante cambios de dirección de último minuto",
+        "Pedir ayuda antes de llegar al agotamiento",
+        "Desarrollar mayor calidez en su comunicación directa"
+      ],
+      "motivadores": [
+        "Ver el progreso real y tangible de sus tareas",
+        "Un entorno de trabajo predecible pero con retos claros",
+        "Autonomía para decidir cómo ejecutar su trabajo",
+        "Reconocimiento por su fiabilidad y resultados finales"
+      ],
+      "estilo": "SD"
+    },
+    "Alto CS": {
+      "nombre": "El Perfeccionista - Combinación Cumplimiento/Estabilidad",
+      "alias": "El Especialista Técnico - El Guardián de los Estándares",
+      "emociones": "Muy reservado y formal; evita mostrar emociones para mantener la objetividad.",
+      "meta": "Lograr la perfección técnica y evitar cualquier riesgo de error.",
+      "juzgaALosDemasPor": "Su precisión, su lógica y el respeto por las reglas establecidas.",
+      "influyeEnLosDemasMediante": "Presentación de datos exhaustivos, hechos probados y atención al detalle.",
+      "suValorParaLaOrganizacion": "Garantiza que no haya fallos, mantiene registros impecables y sigue los protocolos al 100%.",
+      "abusaDe": "Los procedimientos detallados y el excesivo análisis antes de actuar.",
+      "bajoPresion": "Se vuelve extremadamente crítico consigo mismo y con los demás; se retrae.",
+      "teme": "Las críticas a su trabajo y los errores que puedan dañar su reputación profesional.",
+      "seriaEficazSi": "Fuera más abierto a la retroalimentación y aceptara que la perfección absoluta es imposible.",
+      "descripcionNarrativa": "El Perfeccionista es una persona metódica, diplomática y sumamente cuidadosa. Combina la necesidad de precisión del Cumplimiento con la paciencia de la Estabilidad. No toma decisiones a la ligera; necesita revisar cada variable y confirmar que el plan es seguro. En un equipo, es quien detecta los errores que otros pasan por alto y quien se asegura de que se cumplan las normativas legales o técnicas sin excepciones.",
+      "fortalezas": [
+        "Atención al detalle casi infalible",
+        "Alta disciplina y ética de trabajo basada en la calidad",
+        "Habilidad para organizar grandes cantidades de información compleja",
+        "Mantiene estándares elevados incluso en tareas repetitivas"
+      ],
+      "areasMejora": [
+        "Aceptar cambios en los planes sin frustrarse",
+        "Tomar decisiones rápidas cuando el tiempo es crítico",
+        "Mejorar la comunicación interpersonal (ser menos distante)",
+        "No perderse en los detalles menores de un proyecto"
+      ],
+      "motivadores": [
+        "Ambientes estructurados donde se valore la calidad",
+        "Recibir instrucciones por escrito y con datos claros",
+        "Tiempo para investigar y validar sus conclusiones",
+        "Seguridad y estabilidad dentro de su rol experto"
+      ],
+      "estilo": "CS"
+    },
+    "Alto CI": {
+      "nombre": "El Evaluador Diplomático - Combinación Cumplimiento/Influencia",
+      "alias": "El Analista Persuasivo - El Comunicador de Datos",
+      "emociones": "Entusiasmo moderado; mantiene la compostura pero es capaz de conectar socialmente.",
+      "meta": "Lograr que sus altos estándares y conclusiones técnicas sean aceptados por otros.",
+      "juzgaALosDemasPor": "Su capacidad para razonar con lógica y su apertura al diálogo profesional.",
+      "influyeEnLosDemasMediante": "La presentación de hechos con un estilo agradable y convincente.",
+      "suValorParaLaOrganizacion": "Traduce información técnica compleja en beneficios comprensibles; es un excelente mediador técnico.",
+      "abusaDe": "La explicación detallada y la necesidad de tener siempre la última palabra basada en hechos.",
+      "bajoPresion": "Puede volverse excesivamente argumentativo o defensivo con sus datos.",
+      "teme": "Que su competencia técnica sea cuestionada o que sus argumentos carezcan de sustento.",
+      "seriaEficazSi": "Fuera más rápido en la toma de decisiones y no buscara siempre la \"presentación perfecta\".",
+      "descripcionNarrativa": "El Evaluador Diplomático combina el rigor analítico del Cumplimiento con la habilidad social de la Influencia. A diferencia de otros perfiles analíticos que pueden parecer distantes, el CI se esfuerza por presentar sus hallazgos de manera que otros puedan aceptarlos fácilmente. Es meticuloso en su preparación, pero entiende que para que la calidad se implemente, necesita \"vender\" la idea de forma efectiva.",
+      "fortalezas": [
+        "Alta precisión combinada con buenas habilidades de presentación",
+        "Habilidad para suavizar críticas técnicas con diplomacia",
+        "Pensamiento crítico y detallista",
+        "Capacidad para convencer a otros basándose en evidencias reales"
+      ],
+      "areasMejora": [
+        "Evitar la sobre-preparación de las comunicaciones",
+        "Aceptar la improvisación cuando los datos no están completos",
+        "Ser más directo y menos \"adornado\" en situaciones de crisis",
+        "Delegar la recolección de datos para enfocarse en la estrategia"
+      ],
+      "motivadores": [
+        "Reconocimiento por su experticia técnica y profesionalismo",
+        "Entornos donde la precisión sea valorada tanto como la comunicación",
+        "Tiempo suficiente para validar datos antes de presentarlos",
+        "Autonomía para estructurar sus propios argumentos"
+      ],
+      "estilo": "CI"
+    },
+    "Alto CD": {
+      "nombre": "El Investigador - Combinación Cumplimiento/Dominancia",
+      "alias": "El Analista Crítico - El Estratega Lógico",
+      "emociones": "Objetividad fría; prefiere mantener la distancia emocional para no nublar el juicio.",
+      "meta": "Encontrar la solución más lógica y eficiente a problemas complejos.",
+      "juzgaALosDemasPor": "Su competencia técnica y el uso de la lógica.",
+      "influyeEnLosDemasMediante": "Argumentos basados en hechos irrebatibles y autoridad técnica.",
+      "suValorParaLaOrganizacion": "Cuestiona el statu quo, resuelve problemas difíciles y garantiza la precisión bajo presión.",
+      "abusaDe": "El sarcasmo, la crítica mordaz y la insistencia en tener la razón.",
+      "bajoPresion": "Se vuelve testarudo, crítico y puede aislarse para resolver el problema solo.",
+      "teme": "Estar equivocado o ser percibido como incompetente.",
+      "seriaEficazSi": "Fuera más tolerante con las limitaciones de otros y más amable al dar feedback.",
+      "descripcionNarrativa": "El Investigador es una mente aguda y orientada a la resolución de problemas. Combina el rigor del Cumplimiento con la determinación de la Dominancia. Es una persona que no se deja llevar por el entusiasmo ni por la tradición; solo le importan los resultados que puedan probarse lógicamente. En el trabajo, es el \"abogado del diablo\" necesario que encuentra las fallas en un plan antes de que sea demasiado tarde.",
+      "fortalezas": [
+        "Análisis profundo y capacidad de diagnóstico",
+        "Alta independencia y autonomía en el trabajo",
+        "No se deja influenciar por presiones sociales o emocionales",
+        "Enfoque total en la calidad y la efectividad técnica"
+      ],
+      "areasMejora": [
+        "Suavizar la forma de comunicar errores a los demás",
+        "Reconocer que las relaciones humanas afectan la productividad",
+        "Evitar la \"parálisis por análisis\" cuando se requiere rapidez",
+        "Aprender a trabajar de forma más colaborativa"
+      ],
+      "motivadores": [
+        "Desafíos intelectuales complejos",
+        "Autonomía total sobre sus métodos de trabajo",
+        "Ambientes donde prime la lógica sobre la política interna",
+        "Oportunidades para especializarse y ser una autoridad en su área"
+      ],
+      "estilo": "CD"
+    },
+    "Alto DSI": {
+      "nombre": "El Coordinador Dinámico - Combinación Dominancia/Estabilidad/Influencia",
+      "alias": "El Director de Orquesta - El Líder Operativo",
+      "emociones": "Confianza equilibrada; proyecta seguridad y cercanía a la vez.",
+      "meta": "Lograr resultados a través del esfuerzo coordinado del equipo.",
+      "juzgaALosDemasPor": "Su disposición para colaborar y su compromiso con los objetivos.",
+      "influyeEnLosDemasMediante": "Una mezcla de autoridad directa, carisma y apoyo constante.",
+      "suValorParaLaOrganizacion": "Mantiene el equilibrio entre la urgencia y el bienestar del equipo; excelente en la gestión de crisis humanas.",
+      "abusaDe": "La confianza en su propia capacidad para manejarlo todo sin procesos formales.",
+      "bajoPresion": "Puede volverse excesivamente protector del equipo o tomar el mando de forma unilateral.",
+      "teme": "El desorden administrativo y los conflictos que desintegran al grupo.",
+      "seriaEficazSi": "Prestara más atención a los detalles técnicos y a la documentación.",
+      "descripcionNarrativa": "El Coordinador Dinámico es un perfil sumamente versátil. Posee la energía para dirigir (D), la habilidad para motivar (I) y la paciencia para escuchar (S). Su gran debilidad es la falta de interés por el detalle minucioso o las reglas rígidas (Baja C). Es un líder que prefiere la acción y las relaciones antes que los manuales, lo que lo hace muy efectivo en entornos de cambio constante donde el factor humano es clave.",
+      "fortalezas": [
+        "Gran equilibrio entre resultados y personas",
+        "Resiliencia ante la presión operativa",
+        "Habilidad para movilizar equipos hacia metas comunes",
+        "Toma de decisiones pragmática"
+      ],
+      "areasMejora": [
+        "Desarrollar mayor rigor analítico",
+        "No saltarse pasos en los procedimientos establecidos",
+        "Delegar la revisión de detalles técnicos a perfiles C",
+        "Evitar basar decisiones solo en la intuición o la armonía"
+      ],
+      "motivadores": [
+        "Poder influir en el ambiente de trabajo",
+        "Ver el progreso tangible del equipo",
+        "Retos que involucren liderar personas",
+        "Variedad en las tareas diarias"
+      ],
+      "estilo": "DSI"
+    },
+    "Alto ISC": {
+      "nombre": "El Especialista Amigable - Combinación Influencia/Estabilidad/Cumplimiento",
+      "alias": "El Facilitador de Procesos - El Colaborador Metódico",
+      "emociones": "Amabilidad y reserva; proyecta una imagen de serenidad y profesionalismo.",
+      "meta": "Lograr resultados de calidad en un ambiente de trabajo estable y amigable.",
+      "juzgaALosDemasPor": "Su nivel de cooperación y su respeto por los estándares de calidad.",
+      "influyeEnLosDemasMediante": "El apoyo constante, la paciencia y el conocimiento experto.",
+      "suValorParaLaOrganizacion": "Garantiza que los procesos se sigan con precisión sin generar fricciones en el equipo.",
+      "abusaDe": "La precaución excesiva y el deseo de complacer a todos.",
+      "bajoPresion": "Se vuelve indeciso y busca excesiva validación antes de actuar.",
+      "teme": "El conflicto directo, la agresividad y los cambios que comprometan la calidad.",
+      "seriaEficazSi": "Fuera más asertivo y desarrollara mayor confianza para tomar el mando en crisis.",
+      "descripcionNarrativa": "El Especialista Amigable es el perfil ideal para entornos colaborativos que requieren alta precisión. Combina la sociabilidad (I) con la constancia (S) y el detalle (C). A diferencia de los perfiles puramente técnicos, el ISC se preocupa por el impacto humano de su trabajo. Es excelente para roles de formación, soporte técnico especializado o gestión de calidad en equipos donde la cultura es importante.",
+      "fortalezas": [
+        "Comunicación clara, amable y precisa",
+        "Gran capacidad para trabajar bajo procedimientos establecidos",
+        "Lealtad al equipo y enfoque en la calidad total",
+        "Habilidad para escuchar y sistematizar necesidades ajenas"
+      ],
+      "areasMejora": [
+        "Aprender a decir \"no\" ante demandas excesivas",
+        "Reducir el tiempo de análisis antes de tomar decisiones",
+        "Manejar el conflicto de forma directa en lugar de evitarlo",
+        "Aceptar retos que impliquen salir de su zona de confort"
+      ],
+      "motivadores": [
+        "Un entorno de trabajo armonioso y seguro",
+        "Instrucciones claras y tiempo para hacer las cosas bien",
+        "Oportunidades para ayudar a otros usando su conocimiento",
+        "Reconocimiento por su fiabilidad y precisión"
+      ],
+      "estilo": "ISC"
+    },
+    "Alto DCI": {
+      "nombre": "El Estratega - Combinación Dominancia/Cumplimiento/Influencia",
+      "alias": "El Resolutivo Analítico - El Impulsor de Estándares",
+      "emociones": "Impaciencia por los resultados combinada con un alto rigor lógico.",
+      "meta": "Superar desafíos complejos con soluciones innovadoras y precisas.",
+      "juzgaALosDemasPor": "Su competencia técnica y su velocidad de respuesta.",
+      "influyeEnLosDemasMediante": "Argumentos lógicos poderosos y una visión clara del éxito.",
+      "suValorParaLaOrganizacion": "Identifica ineficiencias rápidamente, propone soluciones brillantes y moviliza recursos.",
+      "abusaDe": "La crítica directa, las expectativas poco realistas y el ritmo frenético.",
+      "bajoPresion": "Se vuelve cortante, altamente exigente y muy impaciente con la lentitud.",
+      "teme": "La mediocridad, la falta de control sobre la calidad y el estancamiento.",
+      "seriaEficazSi": "Desarrollara más paciencia con los procesos de aprendizaje de los demás.",
+      "descripcionNarrativa": "El Estratega es una mente inquieta y orientada a la excelencia. Combina la fuerza de la Dominancia (D) con la precisión del Cumplimiento (C) y la capacidad de persuasión de la Influencia (I). Es alguien que no acepta un \"no se puede\" sin una razón lógica. Su enfoque está en el futuro y en la optimización, pero su baja Estabilidad (S) lo hace propenso a cambiar de dirección rápidamente si ve una mejor opción, lo que puede agotar a equipos que prefieren la rutina.",
+      "fortalezas": [
+        "Visión estratégica y resolución de problemas complejos",
+        "Alta capacidad de persuasión basada en datos",
+        "Liderazgo orientado a la eficiencia y la innovación",
+        "Gran adaptabilidad a entornos competitivos"
+      ],
+      "areasMejora": [
+        "Escuchar las preocupaciones de los demás antes de imponer cambios",
+        "Reconocer que el equipo necesita estabilidad para rendir",
+        "Moderar el tono crítico al señalar errores",
+        "Evitar el agotamiento propio y ajeno por exceso de urgencia"
+      ],
+      "motivadores": [
+        "Retos intelectuales y libertad para innovar",
+        "Poder de decisión sobre procesos y personas",
+        "Ambientes de alto rendimiento y competencia",
+        "Resultados que demuestren su superioridad técnica"
+      ],
+      "estilo": "DCI"
+    }
+  }
+}

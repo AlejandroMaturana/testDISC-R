@@ -64,7 +64,7 @@ const Test: React.FC = () => {
     navigate('/results');
   };
 
-  const progress = Math.round(((currentBlock + 1) / blocks.length) * 100);
+  const progress = Math.round((answers.length / blocks.length) * 100);
 
   return (
     <div className="min-h-screen bg-gray-50 py-4 sm:py-8">

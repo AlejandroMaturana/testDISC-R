@@ -107,6 +107,7 @@ export function calculateDISCScoring(answers: Answer[], blocks: Block[]): TestRe
 
 /**
  * Determina el estilo dominante según las puntuaciones del Perfil Natural
+ * Ahora soporta perfiles de 1, 2 o 3 dimensiones
  */
 function getDominantStyle(scores: ProfileScores): string {
   const sorted = Object.entries(scores)
@@ -114,13 +115,29 @@ function getDominantStyle(scores: ProfileScores): string {
 
   const highest = sorted[0];
   const second = sorted[1];
+  const third = sorted[2];
 
+  // Caso 1: Perfil claramente alto (1 dimensión dominante)
   if (highest[1] >= 8) {
     return `Alto ${highest[0]}`;
   }
+
+  // Caso 2: Perfil de 3 dimensiones - cuando la 3ra es significativa
+  // Solo reconoce las combinaciones que existen: DSI, ISC, DCI
+  if (highest[1] >= 4 && second[1] >= 3 && third[1] >= 2 && highest[1] - third[1] <= 3) {
+    const threeLetters = [highest[0], second[0], third[0]].join('');
+    const validCombinations = ['DSI', 'ISC', 'DCI', 'DIS', 'ICS', 'CID']; // Incluye variaciones
+    if (validCombinations.includes(threeLetters)) {
+      return `Alto ${threeLetters}`;
+    }
+  }
+
+  // Caso 3: Perfil de 2 dimensiones
   if (highest[1] >= 4 && second[1] >= 3) {
     return `${highest[0]}${second[0]}`;
   }
+
+  // Caso 4: Perfil moderado
   return `${highest[0]} Moderado`;
 }
 

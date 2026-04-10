@@ -52,7 +52,7 @@
       "blockNumber": 6,
       "words": [
         { "word": "Ameno(a)", "letter": "I" },
-        { "word": "Ingenioso(a)", "letter": "I" },
+        { "word": "Prudente", "letter": "S" },
         { "word": "Investigador(a)", "letter": "C" },
         { "word": "Acepta Riesgos", "letter": "D" }
       ]
@@ -170,7 +170,7 @@
       "words": [
         { "word": "Agresivo(a)", "letter": "D" },
         { "word": "Amistoso(a)", "letter": "I" },
-        { "word": "Directo(a)", "letter": "D" },
+        { "word": "Cuidadoso(a)", "letter": "C" },
         { "word": "Ecuánime", "letter": "S" }
       ]
     },
@@ -178,7 +178,7 @@
       "blockNumber": 20,
       "words": [
         { "word": "De trato Fácil", "letter": "S" },
-        { "word": "Compasivo(a)", "letter": "S" },
+        { "word": "Meticuloso(a)", "letter": "C" },
         { "word": "Habla Directo", "letter": "D" },
         { "word": "Elocuente", "letter": "I" }
       ]
@@ -188,7 +188,7 @@
       "words": [
         { "word": "Evaluador(a)", "letter": "C" },
         { "word": "Generoso(a)", "letter": "I" },
-        { "word": "Animado(a)", "letter": "I" },
+        { "word": "Tranquilo(a)", "letter": "S" },
         { "word": "Persistente", "letter": "D" }
       ]
     },
@@ -197,7 +197,7 @@
       "words": [
         { "word": "Impulsivo(a)", "letter": "D" },
         { "word": "Cuida los Detalles", "letter": "C" },
-        { "word": "Enérgico(a)", "letter": "D" },
+        { "word": "Sociable", "letter": "I" },
         { "word": "Tranquilo(a)", "letter": "S" }
       ]
     },
@@ -234,7 +234,7 @@
         { "word": "Jovial", "letter": "I" },
         { "word": "Preciso(a)", "letter": "C" },
         { "word": "Directo(a)", "letter": "D" },
-        { "word": "Discerniente", "letter": "C" }
+        { "word": "Paciente", "letter": "S" }
       ]
     },
     {

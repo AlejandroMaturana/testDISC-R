@@ -15,7 +15,7 @@ const Home = () => {
       <header className="border-b border-gray-200 sticky top-0 bg-white/95 backdrop-blur-sm z-10">
         <div className="max-w-6xl mx-auto px-3 sm:px-4 py-4 sm:py-6 flex items-center gap-2 sm:gap-3">
           <Brain className="w-6 sm:w-8 h-6 sm:h-8 text-blue-600 flex-shrink-0" />
-          <h1 className="text-lg sm:text-2xl font-bold text-gray-900 line-clamp-2">DISC Test - Conócete Mejor</h1>
+          <h1 className="text-lg sm:text-2xl font-bold text-gray-900 line-clamp-2">testDISC-R | Conócete Mejor</h1>
         </div>
       </header>
 
@@ -26,7 +26,7 @@ const Home = () => {
             Descubre tu perfil de comportamiento
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
-            Completa nuestro test DISC de 28 bloques 100% anónimo y gana insights sobre tu estilo de comportamiento natural y adaptado.
+            Completa este test DISC de 28 bloques 100% anónimo y gana insights sobre tu estilo de comportamiento natural y adaptado.
           </p>
           <button
             onClick={handleStartTest}
@@ -68,7 +68,7 @@ const Home = () => {
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-6 sm:p-8 lg:p-12 text-center">
           <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Acerca del Test DISC</h3>
           <p className="text-sm sm:text-base text-gray-600 max-w-3xl mx-auto mb-4 sm:mb-6 px-2">
-            El test DISC es una herramienta psicológica científicamente validada que mide cuatro dimensiones de comportamiento: 
+            El testDISC-R es una herramienta psicológica científicamente validada que mide cuatro dimensiones de comportamiento: 
             <strong> Dominancia (D), Influencia (I), Estabilidad (S) y Cumplimiento (C)</strong>.
           </p>
           <p className="text-sm sm:text-base text-gray-600 max-w-3xl mx-auto px-2">
@@ -79,7 +79,7 @@ const Home = () => {
 
       {/* Footer */}
       <footer className="border-t border-gray-200 mt-12 sm:mt-16 py-6 sm:py-8 text-center text-xs sm:text-sm text-gray-600">
-        <p>DISC Test v1.0 • Aplicación 100% open source y gratuita</p>
+        <p>testDISC-R v1.0 • Aplicación 100% open source y gratuita</p>
       </footer>
     </div>
   );

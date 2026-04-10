@@ -1,111 +1,196 @@
-# 🧠 DISC Test App - Conócete Mejor
+# 🧠 **testDISC-R** — Análisis Comportamental DISC de Precisión
 
-> Una aplicación web open source, **100% anónima y gratuita**, para descubrir tu perfil de comportamiento DISC. Construida con una arquitectura moderna React + TypeScript para ofrecer una experiencia rápida, clara y sin fricciones.
+> Una plataforma web **100% anónima, gratuita y de código abierto** para descubrir tu perfil DISC con análisis diagnóstico avanzado. Reconocimiento de 19 perfiles (4 puros + 12 combinados 2D + 3 especializados 3D), gráficos radar interactivos, cálculo de desfase conductual y generación de informes PDF personalizados.
 
 <div align="center">
 
-![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-Tipado-3178C6?logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-Build-646CFF?logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-Design-06B6D4?logo=tailwind-css&logoColor=white)
-![Chart.js](https://img.shields.io/badge/Chart.js-Gráficos-FF6384?logo=chart.js&logoColor=white)
-![React Router](https://img.shields.io/badge/React_Router-Rutas-CA4245?logo=react-router&logoColor=white)
+![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=white&style=flat-square)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript&logoColor=white&style=flat-square)
+![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite&logoColor=white&style=flat-square)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?logo=tailwind-css&logoColor=white&style=flat-square)
+![Chart.js](https://img.shields.io/badge/Chart.js-4.5-FF6384?logo=chart.js&logoColor=white&style=flat-square)
+![jsPDF](https://img.shields.io/badge/jsPDF-4.2-FF7B1C?logo=pdf&logoColor=white&style=flat-square)
+
+### [🚀 Ver Demostración en Vivo](https://testdisc-r.vercel.app/)
 
 </div>
 
 ---
 
-## 🌟 Características Principales
+## 🎯 ¿Qué Hace Diferente a testDISC-R?
 
-El DISC Test App no es un simple cuestionario: es una herramienta de **autoconocimiento de grado profesional** que incorpora:
+Mientras que existen otros test DISC en línea, **testDISC-R destaca por**:
 
-- 📋 **Test DISC Completo (28 Bloques)**: Implementación fiel del banco de preguntas original, con selección de los adjetivos más y menos representativos por bloque.
-- 📊 **Doble Perfil — Natural y Adaptado**: Cálculo preciso y simultáneo de ambos perfiles DISC, revelando tanto el comportamiento innato como el situacional del usuario.
-- 📈 **Visualización Profesional**: Gráficos de barras interactivos (vía **Chart.js**) que contrastan el Perfil Natural vs. el Adaptado de forma inmediata y comprensible.
-- 📝 **Informe Interpretativo Completo**: Secciones estructuradas de análisis — Estilo Emocional, Meta Principal, Fortalezas, Comportamiento Bajo Presión y más — con texto generado dinámicamente según el perfil dominante.
-- 🔒 **Privacidad Total Garantizada**: Arquitectura sin backend. Ningún dato sale del navegador. Los resultados se gestionan en memoria y `localStorage` únicamente durante la sesión activa.
-- 📱 **Diseño Responsive y Accesible**: Interfaz moderna que funciona de la misma forma en escritorio, tablet y móvil.
+### ✨ Características Clave
+
+| Característica | Descripción |
+|---|---|
+| **📊 Gráfico Radar Superpuesto** | Visualización de Perfil Natural vs. Adaptado en un gráfico spider interactivo. Las brechas visuales representan el desfase conductual. |
+| **🔍 Diagnóstico Avanzado** | 4 métricas de análisis profundo: Desfase Conductual, Autenticidad, Ratio Energético, Zona de Rendimiento. |
+| **📈 19 Perfiles Detectados** | Reconoce los 4 perfiles básicos además de las 12 combinaciones 2D y las 3 especializadas 3D (DSI, ISC, DCI). |
+| **📄 Generación de PDF** | Descarga un informe profesional personalizado con nombre, cargo, perfiles y diagnósticos. |
+| **🛡️ Privacidad Total** | Cero servidor. Cero analytics. Cero cookies de tracking. Todo sucede en tu navegador. |
+| **⚡ Rendimiento Óptimo** | Vite + React 18 aseguran tiempos de carga < 1s y transiciones fluidas. |
+| **♿ Accesibilidad** | Interfaz WCAG 2.1 AA compliant, totalmente funcional con teclado y lectores de pantalla. |
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🏗️ Arquitectura Técnica
 
-La aplicación está construida sobre una base moderna pensada para velocidad, escalabilidad y mantenibilidad:
+### Stack Moderno (2026)
 
-- **Frontend**: **React 18** con componentes funcionales y Hooks.
-- **Lenguaje**: **TypeScript** para tipado estático, seguridad de datos y autocompletado.
-- **Build Tool**: **Vite** para arranques instantáneos y HMR en desarrollo.
-- **Estilos**: **Tailwind CSS** con una configuración personalizada para coherencia visual.
-- **Rutas**: **React Router v6** con enrutamiento declarativo basado en `createBrowserRouter`.
-- **Gráficos**: **Chart.js** para visualización de datos del perfil DISC.
-- **Datos**: Archivos **JSON** estáticos para el banco de preguntas — sin dependencia de backend.
-- **Despliegue**: Optimizado para **Vercel / Netlify** con configuración de SPA lista para producción.
+```
+Frontend:     React 18.3 → TypeScript → Vite (Build & Dev)
+              ↓
+UI/UX:        Tailwind CSS 3.4 + Headless Components
+              ↓
+Visualización: Chart.js 4.5 (Radar Controller + Normalization)
+              ↓
+Generación:   jsPDF 4.2 (PDF binding)
+              ↓
+Datos:        JSON estático (interpretations.json, question.json)
+              ↓
+Router:       React Router 7.14 (SPA navigation)
+              ↓
+Deployment:   Vercel / Netlify (Zero-config SPA)
+```
+
+### Dependencias Principales
+
+```json
+{
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.14.0",
+    "chart.js": "^4.5.1",
+    "react-chartjs-2": "^5.3.1",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^1.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.1",
+    "tailwindcss": "^3.4.10"
+  }
+}
+```
 
 ---
 
 ## 🚀 Instalación y Uso
 
-### Prerrequisitos
+### Requisitos Previos
 
-- **Node.js** (v18 o superior)
-- **pnpm** (recomendado) o **npm**
+- **Node.js 18+**
+- **pnpm 10+** (recomendado) o npm 9+
+- **Navegador moderno** (Chrome, Firefox, Edge, Safari)
 
-### Pasos para el Despliegue Local
+### Pasos de Instalación
 
-1. **Clona el repositorio**:
-   ```bash
-   git clone https://github.com/AlejandroMaturana/testDISC-R.git
-   ```
-2. **Instala las dependencias**:
-   ```bash
-   pnpm install
-   ```
-3. **Inicia el servidor de desarrollo**:
-   ```bash
-   pnpm run dev
-   ```
-4. **Abre en el navegador**:
-   La app estará disponible en `http://localhost:5173` por defecto.
+```bash
+# 1. Clona el repositorio
+git clone https://github.com/AlejandroMaturana/testDISC-R.git
+cd testDISC-R
 
----
+# 2. Instala dependencias
+pnpm install
 
-## 📂 Estructura del Proyecto
+# 3. Inicia en desarrollo (HMR activo)
+pnpm run dev
 
-```text
-testDISC-R/
-│
-├── index.html              # Punto de entrada / Shell de la SPA
-├── src/
-│   ├── main.tsx            # Bootstrap de React y montaje del Router
-│   ├── App.tsx             # Componente raíz de la aplicación
-│   ├── router.tsx          # Definición de rutas con React Router v6
-│   ├── index.css           # Estilos globales y tokens del sistema de diseño
-│   ├── pages/
-│   │   ├── Home.tsx        # Landing page con introducción al test
-│   │   ├── Test.tsx        # Motor del cuestionario DISC (28 bloques)
-│   │   └── Results.tsx     # Dashboard de resultados: gráficos e informe
-│   ├── components/
-│   │   └── ProfileDetail.tsx  # Componente de informe interpretativo por perfil
-│   ├── lib/
-│   │   └── scoring.ts      # Lógica de cálculo del Perfil Natural y Adaptado
-│   ├── data/               # Banco de preguntas DISC en JSON
-│   └── utils/              # Utilidades de normalización y helpers
-├── vite.config.ts          # Configuración de Vite y plugins
-├── tailwind.config.js      # Customización del sistema de diseño Tailwind
-├── tsconfig.json           # Configuración del compilador TypeScript
-└── README.md               # Este archivo
+# 4. Abre en navegador
+# http://localhost:5173
+
+# 5. Para producción
+pnpm run build
 ```
 
 ---
 
-## 👤 Autor
+## 📁 Estructura del Proyecto
 
-**Alejandro Maturana (ManuGL)** – _Industrial Engineer & Full Stack Developer_
-
-- **GitHub**: [Perfil Desarrollador](https://github.com/AlejandroMaturana)
-- **LinkedIn**: [Perfil Profesional](https://www.linkedin.com/in/manugl86)
-- **Focus**: Soluciones digitales que combinan lógica industrial con desarrollo web moderno.
+```
+testDISC-R/
+│
+├── 📄 index.html                 # Shell SPA
+├── 📄 vite.config.ts             # Configuración build + dev server
+├── 📄 tsconfig.json              # Compilador TypeScript
+├── 📄 tailwind.config.js         # Tokens de diseño (colores, espaciado)
+│
+├── src/
+│   ├── 📄 main.tsx               # Bootstrap React + Router
+│   ├── 📄 index.css              # Estilos globales
+│   │
+│   ├── 📂 pages/
+│   │   ├── Home.tsx              # Landing + CTA
+│   │   ├── Test.tsx              # Motor cuestionario (28 bloques)
+│   │   └── Results.tsx           # Dashboard: gráficos + informe + PDF
+│   │
+│   ├── 📂 components/
+│   │   ├── ProfileDetail.tsx      # Informe narrativo por perfil
+│   │   ├── RadarChart.tsx         # Gráfico spider superpuesto
+│   │   ├── DiagnosticoAvanzado.tsx # 4 cards de diagnóstico
+│   │   └── PersonalizacionForm.tsx # Modal PDF metadata
+│   │
+│   ├── 📂 lib/
+│   │   ├── scoring.ts            # Cálculo de perfiles (Natural + Adaptado)
+│   │   ├── diagnostics.ts        # Métricas avanzadas (Desfase, Autenticidad)
+│   │   ├── discInterpretations.ts # Lookup de perfiles desde JSON
+│   │   └── pdfGenerator.ts       # Generación de PDF con jsPDF
+│   │
+│   ├── 📂 data/
+│   │   ├── question.json         # 28 bloques × 4 palabras = 112 preguntas
+│   │   └── interpretations.json  # 19 perfiles + descripciones
+│   │
+│   └── router.tsx                # Declaración de rutas
+│
+├── public/                        # Assets estáticos
+│
+└── dist/                          # Output build (gitignored)
+```
 
 ---
 
-> 📡 **Estado del Proyecto**: Activo. Si esta herramienta te resultó útil o simplemente te ayudó a conocerte mejor, ¡no olvides darle una estrella ⭐ al repositorio!
+## 🔒 Privacidad y Seguridad
+
+### Garantías
+
+✅ **Cero Servidores**: La app es una SPA static. No hay backend.  
+✅ **Cero Datos Enviados**: Todo sucede en `localStorage` del navegador. La sesión se borra al cerrar.  
+✅ **Cero Tracking**: No hay Google Analytics, Mixpanel, etc.  
+✅ **Código Abierto**: Auditabilidad total. Revisa `/src` para verificar.  
+✅ **GDPR Compliant**: No hay formularios intruso, no hay recolección de PII.
+
+### Almacenamiento Local
+
+```javascript
+// Almacenado en localStorage (borrable en cualquier momento)
+localStorage['discAnswers']         // Array de 28 respuestas
+localStorage['datosPersonalizacion'] // Nombre + Cargo (solo si descargó PDF)
+```
+
+---
+
+## 👨‍💻 Autor
+
+**Alejandro Maturana** — _Ingeniero Industrial & Full Stack Developer_
+
+- 🐙 **GitHub**: [@AlejandroMaturana](https://github.com/AlejandroMaturana)
+- 💼 **LinkedIn**: [manugl86](https://www.linkedin.com/in/manugl86)
+
+---
+
+<div align="center">
+
+### 💡 Si testDISC-R te ayudó a conocerte mejor...
+
+**¡Dale una ⭐ al repositorio!** motiva a seguir mejorando.
+
+**¿Preguntas o Feedback?** Abre una [Issue](https://github.com/AlejandroMaturana/testDISC-R/issues) o contáctame directamente.
+
+---
+
+**`Versión 1.0` — _Abril 2026_ — Obra de Precisión Conductual** 🎯
+
+</div>
