@@ -77,9 +77,16 @@ const Home = () => {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-gray-200 mt-12 sm:mt-16 py-6 sm:py-8 text-center text-xs sm:text-sm text-gray-600">
-        <p>testDISC-R v1.0 • Aplicación 100% open source y gratuita</p>
+      {/* Footer KanbanPro Style */}
+      <footer className="border-t border-gray-200 mt-12 sm:mt-16 py-8 sm:py-10">
+        <div className="flex flex-col items-center gap-4 text-sm text-gray-500">
+          <p className="font-medium text-gray-600">&copy; 2026 testDISC-R</p>
+          <div className="flex gap-6 mt-1 text-blue-600">
+            <a href="/terms" className="hover:text-blue-800 transition-colors">Términos</a>
+            <a href="/privacy" className="hover:text-blue-800 transition-colors">Privacidad</a>
+            <a href="mailto:neofito331@gmail.com" className="hover:text-blue-800 transition-colors">Contacto</a>
+          </div>
+        </div>
       </footer>
     </div>
   );
