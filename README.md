@@ -1,6 +1,6 @@
 # 🧠 **testDISC-R** — Análisis Comportamental DISC de Precisión
 
-> Una plataforma web **100% anónima, gratuita y de código abierto** para descubrir tu perfil DISC con análisis diagnóstico avanzado. Reconocimiento de 19 perfiles (4 puros + 12 combinados 2D + 3 especializados 3D), gráficos radar interactivos y cálculo de desfase conductual.
+> Una plataforma web **100% anónima, gratuita y de código abierto** para descubrir tu perfil DISC con análisis diagnóstico avanzado. Reconocimiento de 19 perfiles (4 puros + 12 combinados 2D + 3 especializados 3D), gráficos interactivos y cálculo de desfase conductual.
 
 <div align="center">
 
@@ -21,13 +21,13 @@ Mientras que existen otros test DISC en línea, **testDISC-R destaca por**:
 
 ### ✨ Características Clave
 
-| Característica | Descripción |
-|---|---|
-| **🔍 Diagnóstico Avanzado** | 4 métricas de análisis profundo: Desfase Conductual, Autenticidad, Ratio Energético, Zona de Rendimiento. |
+| Característica                | Descripción                                                                                                  |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **🔍 Diagnóstico Avanzado**   | 4 métricas de análisis profundo: Desfase Conductual, Autenticidad, Ratio Energético, Zona de Rendimiento.    |
 | **📈 19 Perfiles Detectados** | Reconoce los 4 perfiles básicos además de las 12 combinaciones 2D y las 3 especializadas 3D (DSI, ISC, DCI). |
-| **🛡️ Privacidad Total** | Cero servidor. Cero analytics. Cero cookies de tracking. Todo sucede en tu navegador. |
-| **⚡ Rendimiento Óptimo** | Vite + React 18 aseguran tiempos de carga < 1s y transiciones fluidas. |
-| **♿ Accesibilidad** | Interfaz WCAG 2.1 AA compliant, totalmente funcional con teclado y lectores de pantalla. |
+| **🛡️ Privacidad Total**       | Cero servidor. Cero analytics. Cero cookies de tracking. Todo sucede en tu navegador.                        |
+| **⚡ Rendimiento Óptimo**     | Vite + React 18 aseguran tiempos de carga < 1s y transiciones fluidas.                                       |
+| **♿ Accesibilidad**          | Interfaz WCAG 2.1 AA compliant, totalmente funcional con teclado y lectores de pantalla.                     |
 
 ---
 
@@ -152,7 +152,7 @@ testDISC-R/
 
 ```javascript
 // Almacenado en localStorage (borrable en cualquier momento)
-localStorage['discAnswers']         // Array de 28 respuestas
+localStorage["discAnswers"]; // Array de 28 respuestas
 ```
 
 ---
