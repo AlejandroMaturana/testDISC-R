@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Block, Answer } from '../lib/scoring';
 import questionsData from '../data/question.json';
@@ -11,14 +11,26 @@ const Test: React.FC = () => {
   const [selectedMost, setSelectedMost] = useState<string>('');
   const [selectedLeast, setSelectedLeast] = useState<string>('');
   const [error, setError] = useState<string>('');
+  const [autoAdvancing, setAutoAdvancing] = useState(false);
+  const autoAdvanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const current = blocks[currentBlock];
+
+  const cancelAutoAdvance = () => {
+    if (autoAdvanceTimer.current) {
+      clearTimeout(autoAdvanceTimer.current);
+      autoAdvanceTimer.current = null;
+    }
+    setAutoAdvancing(false);
+  };
 
   const handleSelectMost = (word: string) => {
     if (selectedLeast === word) {
       setError("No puedes elegir la misma palabra como 'Más' y 'Menos'");
+      cancelAutoAdvance();
       return;
     }
+    cancelAutoAdvance();
     setSelectedMost(word);
     setError('');
   };
@@ -26,13 +38,16 @@ const Test: React.FC = () => {
   const handleSelectLeast = (word: string) => {
     if (selectedMost === word) {
       setError("No puedes elegir la misma palabra como 'Más' y 'Menos'");
+      cancelAutoAdvance();
       return;
     }
+    cancelAutoAdvance();
     setSelectedLeast(word);
     setError('');
   };
 
   const handleNext = () => {
+    cancelAutoAdvance();
     if (!selectedMost || !selectedLeast) {
       setError("Debes seleccionar una palabra 'Más' y una 'Menos'");
       return;
@@ -44,7 +59,8 @@ const Test: React.FC = () => {
       least: selectedLeast,
     };
 
-    setAnswers([...answers, newAnswer]);
+    const updatedAnswers = [...answers, newAnswer];
+    setAnswers(updatedAnswers);
 
     if (currentBlock < blocks.length - 1) {
       setCurrentBlock(currentBlock + 1);
@@ -52,10 +68,23 @@ const Test: React.FC = () => {
       setSelectedLeast('');
       setError('');
     } else {
-      // Test terminado → redirigir a resultados
-      handleFinishTest([...answers, newAnswer]);
+      handleFinishTest(updatedAnswers);
     }
   };
+
+  // Auto-avance: se activa cuando ambas selecciones están completas
+  useEffect(() => {
+    if (selectedMost && selectedLeast) {
+      setAutoAdvancing(true);
+      autoAdvanceTimer.current = setTimeout(() => {
+        handleNext();
+      }, 700);
+    }
+    return () => {
+      if (autoAdvanceTimer.current) clearTimeout(autoAdvanceTimer.current);
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedMost, selectedLeast]);
 
   const navigate = useNavigate();
 
@@ -149,13 +178,23 @@ const Test: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-4 sm:mb-6">
           <button
             onClick={() => {
+              cancelAutoAdvance();
               if (currentBlock > 0) {
+                // Guardar respuesta actual si existe antes de retroceder
+                const existingIdx = answers.findIndex(a => a.blockNumber === current.blockNumber);
+                if (selectedMost && selectedLeast && existingIdx === -1) {
+                  setAnswers(prev => [...prev, { blockNumber: current.blockNumber, most: selectedMost, least: selectedLeast }]);
+                }
                 setCurrentBlock(currentBlock - 1);
                 const prevAnswer = answers.find(a => a.blockNumber === current.blockNumber - 1);
                 if (prevAnswer) {
                   setSelectedMost(prevAnswer.most);
                   setSelectedLeast(prevAnswer.least);
+                } else {
+                  setSelectedMost('');
+                  setSelectedLeast('');
                 }
+                setError('');
               }
             }}
             disabled={currentBlock === 0}
@@ -166,9 +205,19 @@ const Test: React.FC = () => {
 
           <button
             onClick={handleNext}
-            className="min-h-[44px] px-6 sm:px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-lg sm:rounded-xl transition-all active:scale-95 text-sm sm:text-base flex-1 sm:flex-none shadow-md hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+            className={`relative overflow-hidden min-h-[44px] px-6 sm:px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-lg sm:rounded-xl transition-all active:scale-95 text-sm sm:text-base flex-1 sm:flex-none shadow-md hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 ${
+              autoAdvancing ? 'ring-2 ring-blue-300' : ''
+            }`}
           >
-            {currentBlock === blocks.length - 1 ? 'Ver Resultados' : 'Siguiente →'}
+            {autoAdvancing && (
+              <span
+                className="absolute inset-0 bg-white/20 origin-left animate-[shrink_0.7s_linear_forwards]"
+                style={{ animation: 'autobar 0.7s linear forwards' }}
+              />
+            )}
+            <span className="relative z-10">
+              {currentBlock === blocks.length - 1 ? 'Ver Resultados' : autoAdvancing ? 'Avanzando…' : 'Siguiente →'}
+            </span>
           </button>
         </div>
 
