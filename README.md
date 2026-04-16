@@ -1,6 +1,6 @@
 # 🧠 **testDISC-R** — Análisis Comportamental DISC de Precisión
 
-> Una plataforma web **100% anónima, gratuita y de código abierto** para descubrir tu perfil DISC con análisis diagnóstico avanzado. Reconocimiento de 19 perfiles (4 puros + 12 combinados 2D + 3 especializados 3D), gráficos radar interactivos, cálculo de desfase conductual y generación de informes PDF personalizados.
+> Una plataforma web **100% anónima, gratuita y de código abierto** para descubrir tu perfil DISC con análisis diagnóstico avanzado. Reconocimiento de 19 perfiles (4 puros + 12 combinados 2D + 3 especializados 3D), gráficos radar interactivos y cálculo de desfase conductual.
 
 <div align="center">
 
@@ -8,8 +8,6 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript&logoColor=white&style=flat-square)
 ![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite&logoColor=white&style=flat-square)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?logo=tailwind-css&logoColor=white&style=flat-square)
-![Chart.js](https://img.shields.io/badge/Chart.js-4.5-FF6384?logo=chart.js&logoColor=white&style=flat-square)
-![jsPDF](https://img.shields.io/badge/jsPDF-4.2-FF7B1C?logo=pdf&logoColor=white&style=flat-square)
 
 ### [🚀 Ver Demostración en Vivo](https://testdisc-r.vercel.app/)
 
@@ -25,10 +23,8 @@ Mientras que existen otros test DISC en línea, **testDISC-R destaca por**:
 
 | Característica | Descripción |
 |---|---|
-| **📊 Gráfico Radar Superpuesto** | Visualización de Perfil Natural vs. Adaptado en un gráfico spider interactivo. Las brechas visuales representan el desfase conductual. |
 | **🔍 Diagnóstico Avanzado** | 4 métricas de análisis profundo: Desfase Conductual, Autenticidad, Ratio Energético, Zona de Rendimiento. |
 | **📈 19 Perfiles Detectados** | Reconoce los 4 perfiles básicos además de las 12 combinaciones 2D y las 3 especializadas 3D (DSI, ISC, DCI). |
-| **📄 Generación de PDF** | Descarga un informe profesional personalizado con nombre, cargo, perfiles y diagnósticos. |
 | **🛡️ Privacidad Total** | Cero servidor. Cero analytics. Cero cookies de tracking. Todo sucede en tu navegador. |
 | **⚡ Rendimiento Óptimo** | Vite + React 18 aseguran tiempos de carga < 1s y transiciones fluidas. |
 | **♿ Accesibilidad** | Interfaz WCAG 2.1 AA compliant, totalmente funcional con teclado y lectores de pantalla. |
@@ -43,10 +39,6 @@ Mientras que existen otros test DISC en línea, **testDISC-R destaca por**:
 Frontend:     React 18.3 → TypeScript → Vite (Build & Dev)
               ↓
 UI/UX:        Tailwind CSS 3.4 + Headless Components
-              ↓
-Visualización: Chart.js 4.5 (Radar Controller + Normalization)
-              ↓
-Generación:   jsPDF 4.2 (PDF binding)
               ↓
 Datos:        JSON estático (interpretations.json, question.json)
               ↓
@@ -63,9 +55,6 @@ Deployment:   Vercel / Netlify (Zero-config SPA)
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.14.0",
-    "chart.js": "^4.5.1",
-    "react-chartjs-2": "^5.3.1",
-    "jspdf": "^4.2.1",
     "lucide-react": "^1.8.0"
   },
   "devDependencies": {
@@ -125,19 +114,16 @@ testDISC-R/
 │   ├── 📂 pages/
 │   │   ├── Home.tsx              # Landing + CTA
 │   │   ├── Test.tsx              # Motor cuestionario (28 bloques)
-│   │   └── Results.tsx           # Dashboard: gráficos + informe + PDF
+│   │   └── Results.tsx           # Dashboard: gráficos + informe
 │   │
 │   ├── 📂 components/
 │   │   ├── ProfileDetail.tsx      # Informe narrativo por perfil
-│   │   ├── RadarChart.tsx         # Gráfico spider superpuesto
-│   │   ├── DiagnosticoAvanzado.tsx # 4 cards de diagnóstico
-│   │   └── PersonalizacionForm.tsx # Modal PDF metadata
+│   │   └── DiagnosticoAvanzado.tsx # 4 cards de diagnóstico
 │   │
 │   ├── 📂 lib/
 │   │   ├── scoring.ts            # Cálculo de perfiles (Natural + Adaptado)
 │   │   ├── diagnostics.ts        # Métricas avanzadas (Desfase, Autenticidad)
-│   │   ├── discInterpretations.ts # Lookup de perfiles desde JSON
-│   │   └── pdfGenerator.ts       # Generación de PDF con jsPDF
+│   │   └── discInterpretations.ts # Lookup de perfiles desde JSON
 │   │
 │   ├── 📂 data/
 │   │   ├── question.json         # 28 bloques × 4 palabras = 112 preguntas
@@ -167,7 +153,6 @@ testDISC-R/
 ```javascript
 // Almacenado en localStorage (borrable en cualquier momento)
 localStorage['discAnswers']         // Array de 28 respuestas
-localStorage['datosPersonalizacion'] // Nombre + Cargo (solo si descargó PDF)
 ```
 
 ---

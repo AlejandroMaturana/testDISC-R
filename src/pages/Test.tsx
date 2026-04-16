@@ -75,7 +75,7 @@ const Test: React.FC = () => {
             Test DISC - 28 Bloques
           </h1>
           <p className="text-xs sm:text-sm text-gray-600 px-2">
-            Sé lo más honesto posible. No hay respuestas correctas o incorrectas.
+            No hay respuestas correctas o incorrectas.
           </p>
         </div>
 
@@ -112,7 +112,9 @@ const Test: React.FC = () => {
                 <div className="flex gap-2 sm:gap-3 justify-center">
                   <button
                     onClick={() => handleSelectMost(item.word)}
-                    className={`flex-1 px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-medium transition-all active:scale-95 ${
+                    aria-pressed={selectedMost === item.word}
+                    aria-label={`Seleccionar ${item.word} como más característico`}
+                    className={`flex-1 min-h-[44px] px-3 sm:px-4 py-3 rounded-lg text-xs sm:text-sm font-medium transition-all active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-500 ${
                       selectedMost === item.word
                         ? 'bg-green-600 text-white shadow-md ring-2 ring-green-400'
                         : 'bg-green-100 text-green-700 hover:bg-green-200 border border-green-300'
@@ -123,7 +125,9 @@ const Test: React.FC = () => {
 
                   <button
                     onClick={() => handleSelectLeast(item.word)}
-                    className={`flex-1 px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-medium transition-all active:scale-95 ${
+                    aria-pressed={selectedLeast === item.word}
+                    aria-label={`Seleccionar ${item.word} como menos característico`}
+                    className={`flex-1 min-h-[44px] px-3 sm:px-4 py-3 rounded-lg text-xs sm:text-sm font-medium transition-all active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500 ${
                       selectedLeast === item.word
                         ? 'bg-red-600 text-white shadow-md ring-2 ring-red-400'
                         : 'bg-red-100 text-red-700 hover:bg-red-200 border border-red-300'
@@ -155,21 +159,21 @@ const Test: React.FC = () => {
               }
             }}
             disabled={currentBlock === 0}
-            className="px-4 sm:px-6 py-2.5 sm:py-3 text-gray-600 font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 rounded-lg transition-colors text-sm sm:text-base flex-1 sm:flex-none"
+            className="min-h-[44px] px-4 sm:px-6 py-3 text-gray-600 font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 rounded-lg transition-colors text-sm sm:text-base flex-1 sm:flex-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400"
           >
             ← Anterior
           </button>
 
           <button
             onClick={handleNext}
-            className="px-6 sm:px-8 py-2.5 sm:py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-lg sm:rounded-xl transition-all active:scale-95 text-sm sm:text-base flex-1 sm:flex-none shadow-md hover:shadow-lg"
+            className="min-h-[44px] px-6 sm:px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-lg sm:rounded-xl transition-all active:scale-95 text-sm sm:text-base flex-1 sm:flex-none shadow-md hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
           >
             {currentBlock === blocks.length - 1 ? 'Ver Resultados' : 'Siguiente →'}
           </button>
         </div>
 
         <p className="text-center text-xs text-gray-400 px-2">
-          Sé honesto. Esta información es solo para ti.
+          Se honesto. Esta información es para uso personal.
         </p>
       </div>
     </div>

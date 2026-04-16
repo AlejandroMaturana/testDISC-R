@@ -36,14 +36,6 @@ export interface DiagnosticoAvanzado {
   };
 }
 
-/**
- * Normaliza scores de -20 a +20 a escala 0-100
- * para visualización en radar chart
- */
-export const normalizarARadar = (score: number): number => {
-  // Convierte de rango [-20, 20] a [0, 100]
-  return Math.round(((score + 20) / 40) * 100);
-};
 
 /**
  * Calcula las brechas entre perfil natural y adaptado

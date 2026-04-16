@@ -30,7 +30,7 @@ const Home = () => {
           </p>
           <button
             onClick={handleStartTest}
-            className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white text-base sm:text-lg font-semibold rounded-xl transition-colors shadow-lg hover:shadow-xl w-full sm:w-auto max-w-sm"
+            className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 min-h-[56px] bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white text-base sm:text-lg font-semibold rounded-xl transition-colors shadow-lg hover:shadow-xl w-full sm:w-auto max-w-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
           >
             Comenzar Test
             <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5" />

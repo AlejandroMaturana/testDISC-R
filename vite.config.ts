@@ -29,7 +29,6 @@ export default defineConfig({
         manualChunks: {
           // Separar librerías pesadas
           vendor: ['react', 'react-dom'],
-          charts: ['chart.js', 'react-chartjs-2'],
         },
       },
     },
