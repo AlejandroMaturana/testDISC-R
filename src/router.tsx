@@ -2,6 +2,8 @@ import { createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
 import Test from './pages/Test';
 import Results from './pages/Results';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
 
 export const router = createBrowserRouter([
     {
@@ -15,6 +17,14 @@ export const router = createBrowserRouter([
     {
         path: '/results',
         element: <Results />,
+    },
+    {
+        path: '/terms',
+        element: <Terms />,
+    },
+    {
+        path: '/privacy',
+        element: <Privacy />,
     },
     {
         path: '*', // Ruta para páginas no encontradas
