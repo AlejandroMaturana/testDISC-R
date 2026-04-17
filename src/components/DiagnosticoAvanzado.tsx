@@ -117,13 +117,17 @@ export const DiagnosticoComponent: React.FC<DiagnosticoComponentProps> = ({ diag
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-white rounded-lg p-4 border border-yellow-200">
             <div className="text-xs font-semibold text-gray-600 mb-2">Expresión (D+I)</div>
-            <div className="text-2xl font-bold text-blue-600">{Math.round(ratioEnergia.expresion)}</div>
-            <div className="text-xs text-gray-500 mt-1">Energía externada</div>
+            <div className={`text-2xl font-bold ${ratioEnergia.expresion >= 0 ? 'text-blue-600' : 'text-blue-400'}`}>
+              {ratioEnergia.expresion > 0 ? '+' : ''}{Math.round(ratioEnergia.expresion)}
+            </div>
+            <div className="text-xs text-gray-500 mt-1">Índice D + I</div>
           </div>
           <div className="bg-white rounded-lg p-4 border border-yellow-200">
             <div className="text-xs font-semibold text-gray-600 mb-2">Contención (S+C)</div>
-            <div className="text-2xl font-bold text-green-600">{Math.round(ratioEnergia.contencion)}</div>
-            <div className="text-xs text-gray-500 mt-1">Energía contenida</div>
+            <div className={`text-2xl font-bold ${ratioEnergia.contencion >= 0 ? 'text-green-600' : 'text-green-400'}`}>
+              {ratioEnergia.contencion > 0 ? '+' : ''}{Math.round(ratioEnergia.contencion)}
+            </div>
+            <div className="text-xs text-gray-500 mt-1">Índice S + C</div>
           </div>
         </div>
 

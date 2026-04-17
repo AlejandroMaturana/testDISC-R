@@ -83,33 +83,30 @@ export const calcularDesfaseMetrics = (
 
 /**
  * Calcula ratio energético (expresión vs contención)
+ * Usa desplazamiento al rango positivo para preservar la dirección relativa
+ * incluso cuando los scores son negativos (ej: perfil muy introvertido).
  */
 export const calcularRatioEnergetico = (natural: ProfileScores): RatioEnergetico => {
   const expresion = natural.D + natural.I;
   const contencion = natural.S + natural.C;
 
-  // Normalizar para ratio (considerando que pueden ser negativos)
-  const expresionNorm = Math.max(0, expresion);
-  const contencionNorm = Math.max(0, contencion);
-
-  // Balance: > 1 = más expresivo, < 1 = más contenido
-  const balance =
-    expresionNorm === 0 && contencionNorm === 0
-      ? 1
-      : (expresionNorm + 10) / (contencionNorm + 10);
+  // Desplazar al rango positivo [1, 81] para calcular el ratio sin perder el sentido
+  // de los valores negativos (rango original de suma: -40 a +40)
+  const SHIFT = 41;
+  const balance = (expresion + SHIFT) / (contencion + SHIFT);
 
   let perfil: 'Extrovertido' | 'Ambiverso' | 'Introvertido';
-  if (balance > 1.3) {
+  if (balance > 1.25) {
     perfil = 'Extrovertido';
-  } else if (balance < 0.7) {
+  } else if (balance < 0.80) {
     perfil = 'Introvertido';
   } else {
     perfil = 'Ambiverso';
   }
 
   return {
-    expresion: expresionNorm,
-    contencion: contencionNorm,
+    expresion, // valor real (puede ser negativo), la UI lo formatea
+    contencion,
     balance,
     perfil,
   };
@@ -133,16 +130,17 @@ export const determinarZonaRendimiento = (desfasePromedio: number): string => {
         ? 'Rendimiento Óptimo'
         : 'Estrés Alto';
 
-  const recomendaciones = {
-    Comodidad:
-      'Considerad explorar nuevos contextos que desafíen tu desarrollo. El crecimiento ocurre fuera de la zona de confort.',
-    ['Rendimiento Óptimo']:
+  // Record tipado explícito para evitar fallos de lookup por claves con tildes/espacios
+  const recomendaciones: Record<'Comodidad' | 'Rendimiento Óptimo' | 'Estrés Alto', string> = {
+    'Comodidad':
+      'Considera explorar nuevos contextos que desafíen tu desarrollo. El crecimiento ocurre fuera de la zona de confort.',
+    'Rendimiento Óptimo':
       'Excelente punto de equilibrio. Estás adaptándote de forma efectiva mientras mantienes tu autenticidad.',
-    ['Estrés Alto']:
+    'Estrés Alto':
       'Reflexiona sobre dónde estás experimentando mayor discrepancia. Podría ser señal de desalineación ambiental.',
   };
 
-  return recomendaciones[zona as keyof typeof recomendaciones] || '';
+  return recomendaciones[zona] ?? '';
 };
 
 /**

@@ -59,13 +59,26 @@ const Test: React.FC = () => {
       least: selectedLeast,
     };
 
-    const updatedAnswers = [...answers, newAnswer];
+    // Upsert: actualiza la respuesta si el bloque ya fue contestado antes
+    // (evita doble conteo al retroceder y volver a avanzar)
+    const updatedAnswers = answers.some(a => a.blockNumber === current.blockNumber)
+      ? answers.map(a => a.blockNumber === current.blockNumber ? newAnswer : a)
+      : [...answers, newAnswer];
+
     setAnswers(updatedAnswers);
 
     if (currentBlock < blocks.length - 1) {
+      const nextBlock = blocks[currentBlock + 1];
+      const nextAnswer = updatedAnswers.find(a => a.blockNumber === nextBlock.blockNumber);
       setCurrentBlock(currentBlock + 1);
-      setSelectedMost('');
-      setSelectedLeast('');
+      // Restaurar selecciones previas si el bloque siguiente ya fue respondido
+      if (nextAnswer) {
+        setSelectedMost(nextAnswer.most);
+        setSelectedLeast(nextAnswer.least);
+      } else {
+        setSelectedMost('');
+        setSelectedLeast('');
+      }
       setError('');
     } else {
       handleFinishTest(updatedAnswers);
@@ -180,13 +193,18 @@ const Test: React.FC = () => {
             onClick={() => {
               cancelAutoAdvance();
               if (currentBlock > 0) {
-                // Guardar respuesta actual si existe antes de retroceder
-                const existingIdx = answers.findIndex(a => a.blockNumber === current.blockNumber);
-                if (selectedMost && selectedLeast && existingIdx === -1) {
-                  setAnswers(prev => [...prev, { blockNumber: current.blockNumber, most: selectedMost, least: selectedLeast }]);
+                // Guardar respuesta actual con upsert antes de retroceder (sin duplicar)
+                if (selectedMost && selectedLeast) {
+                  const currentAnswer = { blockNumber: current.blockNumber, most: selectedMost, least: selectedLeast };
+                  setAnswers(prev =>
+                    prev.some(a => a.blockNumber === current.blockNumber)
+                      ? prev.map(a => a.blockNumber === current.blockNumber ? currentAnswer : a)
+                      : [...prev, currentAnswer]
+                  );
                 }
+                const prevBlockNumber = blocks[currentBlock - 1].blockNumber;
                 setCurrentBlock(currentBlock - 1);
-                const prevAnswer = answers.find(a => a.blockNumber === current.blockNumber - 1);
+                const prevAnswer = answers.find(a => a.blockNumber === prevBlockNumber);
                 if (prevAnswer) {
                   setSelectedMost(prevAnswer.most);
                   setSelectedLeast(prevAnswer.least);

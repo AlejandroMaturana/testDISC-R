@@ -126,7 +126,8 @@ function getDominantStyle(scores: ProfileScores): string {
   // Solo reconoce las combinaciones que existen: DSI, ISC, DCI
   if (highest[1] >= 4 && second[1] >= 3 && third[1] >= 2 && highest[1] - third[1] <= 3) {
     const threeLetters = [highest[0], second[0], third[0]].join('');
-    const validCombinations = ['DSI', 'ISC', 'DCI', 'DIS', 'ICS', 'CID']; // Incluye variaciones
+    // Solo combinaciones que tienen perfil definido en interpretations.json
+    const validCombinations = ['DSI', 'ISC', 'DCI'];
     if (validCombinations.includes(threeLetters)) {
       return `Alto ${threeLetters}`;
     }

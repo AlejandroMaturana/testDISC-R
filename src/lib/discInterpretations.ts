@@ -22,25 +22,36 @@ export interface DISCProfileDetail {
     fortalezas: string[];
     areasMejora: string[];
     motivadores: string[];
-    estilo: 'D' | 'I' | 'S' | 'C' | 'DI' | 'DC' | 'DS' | 'ID' | 'IS' | 'IC' | 'SD' | 'SI' | 'SC' | 'CD' | 'CI' | 'CS';
+    estilo: 'D' | 'I' | 'S' | 'C' | 'DI' | 'DC' | 'DS' | 'ID' | 'IS' | 'IC' | 'SD' | 'SI' | 'SC' | 'CD' | 'CI' | 'CS' | 'DSI' | 'ISC' | 'DCI';
 }
 
 export const discProfiles: Record<string, DISCProfileDetail> = interpretationsData.profiles as Record<string, DISCProfileDetail>;
 
 export const getDISCProfile = (dominantStyle: string): DISCProfileDetail => {
-    // Normalizar el nombre del estilo
+    // Normalizar: quitar prefijo "Alto " y sufijo "Moderado"
     const normalized = dominantStyle
-        .replace(/Moderado/g, '')
-        .replace(/Alto\s/g, '')
+        .replace(/\s*Moderado\s*/g, '')
+        .replace(/^Alto\s+/, '')
         .trim();
 
-    // Buscar coincidencia directa
-    const profile = discProfiles[dominantStyle] || discProfiles[`Alto ${normalized}`];
+    // 1. Búsqueda directa (ej: "Alto DI", "Alto C")
+    if (discProfiles[dominantStyle]) return discProfiles[dominantStyle];
 
-    if (profile) {
-        return profile;
+    // 2. Con prefijo "Alto " (cubre "S Moderado" → "S" → "Alto S")
+    if (discProfiles[`Alto ${normalized}`]) return discProfiles[`Alto ${normalized}`];
+
+    // 3. Combinaciones de 3 letras sin perfil propio: usar las 2 primeras (ej: "DIS" → "DI")
+    if (normalized.length >= 3) {
+        const twoLetters = normalized.slice(0, 2);
+        if (discProfiles[`Alto ${twoLetters}`]) return discProfiles[`Alto ${twoLetters}`];
     }
 
-    // Fallback a C
+    // 4. Último recurso: usar solo la letra dominante (ej: "DIS" → "D")
+    if (normalized.length >= 1) {
+        const firstLetter = normalized.slice(0, 1);
+        if (discProfiles[`Alto ${firstLetter}`]) return discProfiles[`Alto ${firstLetter}`];
+    }
+
+    // Fallback final a C
     return discProfiles['Alto C'] as DISCProfileDetail;
 };

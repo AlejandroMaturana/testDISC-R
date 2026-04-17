@@ -61,7 +61,7 @@ const Results: React.FC = () => {
           </p>
         </div>
 
-        {/* NAVEGACIÓN DE TABS */}
+        {/* NAVEGACIÓN SUPERIOR DE TABS */}
         <div className="flex justify-center mb-8">
           <div className="inline-flex bg-white rounded-lg sm:rounded-xl shadow-sm border border-gray-200 p-1">
             <button
@@ -185,6 +185,42 @@ const Results: React.FC = () => {
             <ProfileDetail profile={getDISCProfile(dominantStyle)} />
           </div>
         )}
+        
+        {/* NAVEGACIÓN INFERIOR DE TABS */}
+        <div className="flex justify-center mb-8">
+          <div className="inline-flex bg-white rounded-lg sm:rounded-xl shadow-sm border border-gray-200 p-1">
+            <button
+              onClick={() => setActiveTab('resumen')}
+              className={`px-4 sm:px-6 py-2.5 text-sm sm:text-base font-medium rounded-md sm:rounded-lg transition-colors ${
+                activeTab === 'resumen'
+                  ? 'bg-blue-600 text-white shadow'
+                  : 'text-gray-600 hover:bg-gray-50'
+              }`}
+            >
+              Resumen
+            </button>
+            <button
+              onClick={() => setActiveTab('diagnostico')}
+              className={`px-4 sm:px-6 py-2.5 text-sm sm:text-base font-medium rounded-md sm:rounded-lg transition-colors ${
+                activeTab === 'diagnostico'
+                  ? 'bg-blue-600 text-white shadow'
+                  : 'text-gray-600 hover:bg-gray-50'
+              }`}
+            >
+              Diagnóstico Avanzado
+            </button>
+            <button
+              onClick={() => setActiveTab('detalle')}
+              className={`px-4 sm:px-6 py-2.5 text-sm sm:text-base font-medium rounded-md sm:rounded-lg transition-colors ${
+                activeTab === 'detalle'
+                  ? 'bg-blue-600 text-white shadow'
+                  : 'text-gray-600 hover:bg-gray-50'
+              }`}
+            >
+              Perfil Detallado
+            </button>
+          </div>
+        </div>
 
         <div className="mt-8 sm:mt-12 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center">
           <button
